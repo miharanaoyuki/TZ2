@@ -46,11 +46,8 @@ public class Exp_bar: MonoBehaviour
 
     }
 
-  
 
 
-
-    
 
 
 }
