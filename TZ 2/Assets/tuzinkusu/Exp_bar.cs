@@ -10,9 +10,10 @@ public class Exp_bar: MonoBehaviour
     public static float exp_max = 30;
     private Slider _slider;//Sliderの値を代入する_sliderを宣言
     public GameObject EXP;//体力ゲージに指定するSlider
-    
 
-   
+
+    [SerializeField]
+    private SoundManager soundManager;
 
 
 
@@ -42,7 +43,10 @@ public class Exp_bar: MonoBehaviour
         {
             exp_min++;
         }
-
+        if(exp_min == exp_max)
+        {
+            soundManager.Play("Lv Up");
+        }
 
     }
 
