@@ -65,7 +65,7 @@ public class HP : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "enemy")
+        if (other.gameObject.tag == "Enemy")
         {
 
             soundManager.Play("Player_Damage");
