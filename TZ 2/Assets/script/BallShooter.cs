@@ -5,6 +5,11 @@ public class BallShooter : MonoBehaviour
 
     public GameObject ball;
     float speed;
+    [SerializeField]
+    private SoundManager soundManager;
+
+
+
 
     void Start()
     {
@@ -28,6 +33,11 @@ public class BallShooter : MonoBehaviour
 
             // ’e‚É‘¬“x‚ð—^‚¦‚é
             clone.GetComponent<Rigidbody2D>().velocity = shotForward * speed;
+            
+
+                soundManager.Play("atcck");
+                
+            
 
         }
     }

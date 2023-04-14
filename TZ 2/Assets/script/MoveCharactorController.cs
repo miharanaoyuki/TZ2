@@ -17,7 +17,3 @@ public class MoveCharactorController : MonoBehaviour
         transform.position = position;
     }
 }
-
-
-
-
