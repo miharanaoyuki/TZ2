@@ -68,15 +68,15 @@ public class HP : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
 
-            soundManager.Play("Player_Damage");
+            soundManager.Play("damage");
             life--;
         }
-        if (other.gameObject.tag == "enemy_bullet")
-        {
-            soundManager.Play("Player_Damage");
-            Destroy(other.gameObject);
-            life--;
-        }
+        //if (other.gameObject.tag == "enemy_bullet")
+        //{
+        //    soundManager.Play("Player_Damage");
+        //    Destroy(other.gameObject);
+        //    life--;
+        //}
         if (other.gameObject.tag == "boss")
         {
 
