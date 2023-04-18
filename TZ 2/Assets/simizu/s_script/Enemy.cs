@@ -40,10 +40,10 @@ public class Enemy : MonoBehaviour
             var angle = Utils.GetAngle(
                 transform.localPosition,
                 PlayerMove.m_instance.transform.localPosition);
-            //var direction = Utils.GetDirection(angle);
+            var direction = Utils.GetDirection(angle);
 
             // プレイヤーが存在する方向に移動する
-            //transform.localPosition += direction * m_speed;
+            transform.localPosition += direction * m_speed;
 
             // プレイヤーが存在する方向を向く
             var angles = transform.localEulerAngles;
