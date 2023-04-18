@@ -102,6 +102,7 @@ MonoBehaviour:
   m_respawnPosInside: {x: 4.8, y: 3.5}
   m_respawnPosOutside: {x: 10, y: 7}
   m_speed: 0.01
+  m_isFollow: 1
 --- !u!50 &-5386363508659630985
 Rigidbody2D:
   serializedVersion: 4
