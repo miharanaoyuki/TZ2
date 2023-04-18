@@ -3,7 +3,7 @@
 //using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class CircleAttack: MonoBehaviour
 {
 
 	//transformで毎フレーム取得すると負荷が掛かる為、別に参照を保持。
@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
 	float followRate = 0.1f;
 
 	//追尾するポイントのプレイヤーからの距離(つまり小さい程、近付く)。
-	float followTargetDistance = 5.0f;
+	float followTargetDistance = 3.0f;
 
 
 
