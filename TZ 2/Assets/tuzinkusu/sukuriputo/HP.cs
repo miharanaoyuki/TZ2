@@ -10,7 +10,7 @@ public class HP : MonoBehaviour
     private Slider _slider;//Sliderの値を代入する_sliderを宣言
     public GameObject slider;//体力ゲージに指定するSlider
     public static int maxHp=10;
-    float rotation_speed = 0;//回転速度
+    
 
     public static int MAX = 10;
 

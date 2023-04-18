@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 
 	//インスペクターからプレイヤーを紐付けしておく。
 	public Player player;
-
+	
 
 
 	void Awake()
