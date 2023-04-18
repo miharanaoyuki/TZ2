@@ -1,35 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// プレイヤーを制御するコンポーネント
 public class PlayerMove : MonoBehaviour
 {
-    private float speed = 0.02f; 
-    
-    void Start() 
+    public float m_speed; // 移動の速さ
+
+    // プレイヤーのインスタンスを管理する static 変数
+    public static PlayerMove m_instance;
+
+    // ゲーム開始時に呼び出される関数
+    private void Awake()
     {
-    
+        m_instance = this;
     }
 
-    void Update()
+    // 毎フレーム呼び出される関数
+    private void Update()
     {
-        Vector2 position = transform.position;
-        if (Input.GetKey("left"))
-        { 
-            position.x -= speed; 
-        }
-        else if(Input.GetKey("right"))
-        {
-            position.x += speed;
-        }
-        else if (Input.GetKey("up"))
-        { 
-            position.y += speed;
-        } 
-        else if (Input.GetKey("down")) 
-        { 
-            position.y -= speed; 
-        }
-        transform.position = position;
+        // ゲームを 60 FPS 固定にする
+        Application.targetFrameRate = 60;
+
+        // 矢印キーの入力情報を取得する
+        var h = Input.GetAxis("Horizontal");
+        var v = Input.GetAxis("Vertical");
+
+        // 矢印キーが押されている方向にプレイヤーを移動する
+        var velocity = new Vector3(h, v) * m_speed;
+        transform.localPosition += velocity;
+
+        // プレイヤーが画面外に出ないように位置を制限する
+        transform.localPosition = Utils.ClampPosition(transform.localPosition);
     }
 }
