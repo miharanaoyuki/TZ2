@@ -3,7 +3,7 @@
 //using System.Collections.Generic;
 using UnityEngine;
 
-public class CircleAttack: MonoBehaviour
+public class CircleAttack2 : MonoBehaviour
 {
 
 	//transformで毎フレーム取得すると負荷が掛かる為、別に参照を保持。
@@ -25,7 +25,7 @@ public class CircleAttack: MonoBehaviour
 
 	//追尾するポイントのプレイヤーからの距離(つまり小さい程、近付く)。
 	float followTargetDistance = 3.0f;
-	
+
 	float speed;
 	bool flag = true;
 	void Awake()
@@ -66,14 +66,14 @@ public class CircleAttack: MonoBehaviour
 			}
 
 
-            
-            Invoke("attack", 12f);
+
+			Invoke("attack", 9f);
 
 
 
 
 
-        }
+		}
 	}
 
 	//回転方向を反転。
@@ -81,8 +81,8 @@ public class CircleAttack: MonoBehaviour
 	{
 		direction = -direction;
 	}
-    void attack()
-    {
+	void attack()
+	{
 
 		
 			flag = false;
@@ -92,7 +92,7 @@ public class CircleAttack: MonoBehaviour
 
 			GetComponent<Rigidbody2D>().velocity = -shotForward * speed;
 		
-    }
+	}
 
 
 
@@ -100,9 +100,9 @@ public class CircleAttack: MonoBehaviour
 
 
 
-    //地面への侵入を制限する場合は、当たり判定を付けて、コレのコメントアウトを外す。
-    //地面オブジェクトに「Ground」タグを付けておく。
-    /*
+	//地面への侵入を制限する場合は、当たり判定を付けて、コレのコメントアウトを外す。
+	//地面オブジェクトに「Ground」タグを付けておく。
+	/*
 		void OnCollisionEnter2D(Collision2D col)
 		{
 
