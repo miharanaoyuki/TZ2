@@ -46,9 +46,9 @@ public class Enemy : MonoBehaviour
             transform.localPosition += direction * m_speed;
 
             // ƒvƒŒƒCƒ„[‚ª‘¶İ‚·‚é•ûŒü‚ğŒü‚­
-            var angles = transform.localEulerAngles;
-            angles.z = angle - 90;
-            transform.localEulerAngles = angles;
+            //var angles = transform.localEulerAngles;
+            //angles.z = angle - 90;
+            //transform.localEulerAngles = angles;
             return;
         }
 
