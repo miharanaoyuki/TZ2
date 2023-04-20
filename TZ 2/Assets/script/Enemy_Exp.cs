@@ -9,7 +9,7 @@ public class Enemy_Exp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); //"SoundManager"Ç∆Ç¢Ç§ñºëOÇ≈åüçı
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class Enemy_Exp : MonoBehaviour
     {
         if (other.gameObject.tag == "bullet")
         {
-            soundManager.Play("Enemy_dame");
+            soundManager.Play("Enemy");
             Exp_bar.exp_min += 10;
             Destroy(gameObject);  
 

@@ -33,17 +33,14 @@ public class Exp_bar: MonoBehaviour
 
         _slider.maxValue = exp_max;
 
-        //if(Experience.MAX == true)
+        //if (Experience.MAX == true)
         //{
         //    exp_min = exp_max;
         //}
 
 
-        if (Input.GetKeyDown("a"))
-        {
-            exp_min++;
-        }
-        if(exp_min == exp_max)
+
+        if (exp_min == exp_max)
         {
             soundManager.Play("Lv Up");
         }
