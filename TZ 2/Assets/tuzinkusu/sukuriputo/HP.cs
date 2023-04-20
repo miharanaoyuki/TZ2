@@ -55,7 +55,7 @@ public class HP : MonoBehaviour
     void die()
     {
 
-        SceneManager.LoadScene("over");
+        
 
         Debug.Log("バイバイ");
 

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2026311921850146141}
   - component: {fileID: 7733254153213427851}
   - component: {fileID: 1379520550448223028}
+  - component: {fileID: 7108770589317146727}
   m_Layer: 0
   m_Name: pipo-enemy046
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,3 +151,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.8, y: 4.8}
   m_EdgeRadius: 0
+--- !u!114 &7108770589317146727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3979672633069919750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d2eb1c88f9dfb4c91451c7465480fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundManager: {fileID: 5687635236622359513, guid: c964315bafa64344aa53117b040415f1, type: 3}
