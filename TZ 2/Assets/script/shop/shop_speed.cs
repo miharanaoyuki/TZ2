@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class shop_speed : MonoBehaviour
 {
-    [SerializeField]
-    private SpriteRenderer sheepRenderer;
-    [SerializeField]
-    private Sprite cutSheepSprite;
 
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
     }
 
     private void Shaving()
     {
-        sheepRenderer.sprite = cutSheepSprite;
+        if(PlayerMove.m_speed < 0.2f)
+        {
+            PlayerMove.m_speed += 0.05f;
+        }
+        
     }
 
     private void OnMouseOver()

@@ -9,6 +9,7 @@ public class CircleAttack: MonoBehaviour
 	//transformで毎フレーム取得すると負荷が掛かる為、別に参照を保持。
 	Transform tf;
 
+
 	//左向き時のRotation。使用する画像素材によっては左右逆かも。
 	Quaternion leftRotation = Quaternion.Euler(0, 180, 0);
 	//右向き時のRotation。
@@ -24,7 +25,7 @@ public class CircleAttack: MonoBehaviour
 	float followRate = 0.1f;
 
 	//追尾するポイントのプレイヤーからの距離(つまり小さい程、近付く)。
-	float followTargetDistance = 3.0f;
+	float followTargetDistance = 1.5f;
 	
 	float speed;
 	bool flag = true;

@@ -42,7 +42,7 @@ public class generation : MonoBehaviour
 		Vector3 area = GetComponent<SpriteRenderer>().bounds.size;
 
 		Vector3 newPos = GameManager.Instance.player.tf.position;
-		newPos.x +=3.0f;
+		newPos.x +=1.5f;
 
 
 		//ƒvƒŒƒnƒu‚ğì‚é

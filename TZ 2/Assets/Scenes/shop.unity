@@ -221,8 +221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552e0fc611a77ea4c88b9c16649f982b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sheepRenderer: {fileID: 0}
-  cutSheepSprite: {fileID: 0}
 --- !u!61 &12642086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -599,8 +597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933950b96b973e94dbffc18fc0cc877f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sheepRenderer: {fileID: 0}
-  cutSheepSprite: {fileID: 0}
 --- !u!61 &89877705
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1255,8 +1251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a23fe9dc0c4caf4c8ee0cd6b0df2b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sheepRenderer: {fileID: 0}
-  cutSheepSprite: {fileID: 0}
 --- !u!61 &1071157158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2110,7 +2104,7 @@ GameObject:
   - component: {fileID: 1720128502}
   - component: {fileID: 1720128501}
   m_Layer: 0
-  m_Name: EXP
+  m_Name: TZ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2157,7 +2151,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 40281aabbf07b5c40aaff691062c3047, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7f6a56e7a41888941b78a6263b43503a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2177,7 +2171,7 @@ Transform:
   m_GameObject: {fileID: 1720128498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.7, y: -1.22, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2195,8 +2189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f61f5723052bcb499627b6a3df3f46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sheepRenderer: {fileID: 0}
-  cutSheepSprite: {fileID: 0}
 --- !u!61 &1720128502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2210,18 +2202,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.6593804, y: 1.1228514}
+  m_Offset: {x: 0.31026554, y: 0.22989511}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12.18, y: 12.18}
+    oldSize: {x: 2.49, y: 2.57}
     newSize: {x: 12.18, y: 12.18}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.23639, y: 14.425703}
+  m_Size: {x: 4.6707916, y: 3.0492115}
   m_EdgeRadius: 0
 --- !u!1 &1742251822
 GameObject:
@@ -2447,8 +2439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152e812ff27640049a14803f6242929f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sheepRenderer: {fileID: 1840692619}
-  cutSheepSprite: {fileID: 21300000, guid: 0327ce3c0c325794c91ad6741e510192, type: 3}
 --- !u!61 &1840692622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2533,7 +2523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXP
+  m_text: TZ
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
