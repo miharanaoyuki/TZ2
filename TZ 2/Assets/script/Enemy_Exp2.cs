@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Exp : MonoBehaviour
+public class Enemy_Exp2 : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
-    public static float enemy_HP = 3f;
+    public static float enemy_HP = 1f;
     // Start is called before the first frame update
     void Start()
     {
-      
+       
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); //"SoundManager"Ç∆Ç¢Ç§ñºëOÇ≈åüçı
     }
 
@@ -25,7 +25,6 @@ public class Enemy_Exp : MonoBehaviour
         {
             soundManager.Play("Enemy");
             enemy_HP -= Bullet_Destroy.attack;
-
             Destroy(other.gameObject);
 
             
@@ -33,11 +32,14 @@ public class Enemy_Exp : MonoBehaviour
             if (enemy_HP == 0)
             {
                 Destroy(gameObject);
-                enemy_HP = 3f;
-            }    
-                
-            
+                enemy_HP = 1f;
+            }
+
+
+
+
         }
+
 
         if (other.gameObject.tag == "sbullet")
         {
@@ -45,12 +47,13 @@ public class Enemy_Exp : MonoBehaviour
 
             enemy_HP -= 0.5f;
 
+            
 
 
             if (enemy_HP == 0)
             {
                 Destroy(gameObject);
-                enemy_HP = 3f;
+                enemy_HP = 1f;
             }
 
 

@@ -1,12 +1,12 @@
 using UnityEngine;
 
 // プレイヤーを制御するコンポーネント
-public class PlayerMove : MonoBehaviour
+public class sMove : MonoBehaviour
 {
-    public static float m_speed = 0.07f; // 移動の速さ
+    public static float m_speed = 0.1f; // 移動の速さ
 
     // プレイヤーのインスタンスを管理する static 変数
-    public static PlayerMove m_instance;
+    public static sMove m_instance;
 
     // ゲーム開始時に呼び出される関数
     private void Awake()
@@ -29,7 +29,7 @@ public class PlayerMove : MonoBehaviour
         transform.localPosition += velocity;
 
         // プレイヤーが画面外に出ないように位置を制限する
-        //transform.localPosition = Utils.ClampPosition(transform.localPosition);
+        //transform.localPosition = Ult.ClampPosition(transform.localPosition);
 
         // プレイヤーのスクリーン座標を計算する
         var screenPos = Camera.main.WorldToScreenPoint(transform.position);

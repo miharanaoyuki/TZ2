@@ -2,13 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shop_EXP : MonoBehaviour
+public class shop_TZ : MonoBehaviour
 {
-    [SerializeField]
-    private SpriteRenderer sheepRenderer;
-    [SerializeField]
-    private Sprite cutSheepSprite;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +16,7 @@ public class shop_EXP : MonoBehaviour
 
     private void Shaving()
     {
-        sheepRenderer.sprite = cutSheepSprite;
+        
     }
 
     private void OnMouseOver()

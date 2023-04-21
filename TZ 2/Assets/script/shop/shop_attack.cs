@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class shop_attack : MonoBehaviour
 {
-    [SerializeField]
-    private SpriteRenderer sheepRenderer;
-    [SerializeField]
-    private Sprite cutSheepSprite;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +17,8 @@ public class shop_attack : MonoBehaviour
 
     private void Shaving()
     {
-        sheepRenderer.sprite = cutSheepSprite;
+        if(BallShooter.attack_speed > 0.4f)
+        BallShooter.attack_speed -= 0.03f;
     }
 
     private void OnMouseOver()
