@@ -5,7 +5,7 @@ public class EnemyManager : MonoBehaviour
 {
     public Enemy[] m_enemyPrefabs; // 敵のプレハブを管理する配列
     public float m_interval; // 出現間隔（秒）
-
+    float speed = 5;
     private float m_timer; // 出現タイミングを管理するタイマー
 
     // 毎フレーム呼び出される関数
@@ -24,8 +24,11 @@ public class EnemyManager : MonoBehaviour
         // 出現する敵をランダムに決定する
         var enemyIndex = Random.Range(0, m_enemyPrefabs.Length);
 
-        // 出現する敵のプレハブを配列から取得する
-        var enemyPrefab = m_enemyPrefabs[enemyIndex];
+        transform.position += new Vector3(Time.deltaTime * speed, 0, 0);
+
+        if (transform.position.x >= 5) ;
+            // 出現する敵のプレハブを配列から取得する
+            var enemyPrefab = m_enemyPrefabs[enemyIndex];
 
         // 敵のゲームオブジェクトを生成する
         var enemy = Instantiate(enemyPrefab);
