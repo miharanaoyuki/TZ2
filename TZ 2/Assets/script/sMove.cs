@@ -3,7 +3,7 @@ using UnityEngine;
 // プレイヤーを制御するコンポーネント
 public class sMove : MonoBehaviour
 {
-    public static float m_speed = 0.1f; // 移動の速さ
+    public static float m_speed = 0.07f; // 移動の速さ
 
     // プレイヤーのインスタンスを管理する static 変数
     public static sMove m_instance;
