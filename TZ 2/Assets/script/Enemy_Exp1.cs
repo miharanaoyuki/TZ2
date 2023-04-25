@@ -7,6 +7,9 @@ public class Enemy_Exp1 : MonoBehaviour
     [SerializeField]
     private SoundManager soundManager;
     public static float enemy_HP = 2f;
+    public GameObject particleObject;
+    public GameObject bossEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,12 +29,17 @@ public class Enemy_Exp1 : MonoBehaviour
         {
             soundManager.Play("Enemy");
             enemy_HP -= Bullet_Destroy.attack;
+            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             Destroy(other.gameObject);
 
             
 
             if (enemy_HP == 0)
             {
+                //エフェクトを生成する
+                GameObject effect = Instantiate(bossEffect) as GameObject;
+                //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
+                effect.transform.position = gameObject.transform.position;
                 Destroy(gameObject);
                 enemy_HP = 2f;
             }
@@ -47,12 +55,16 @@ public class Enemy_Exp1 : MonoBehaviour
             soundManager.Play("Enemy");
 
             enemy_HP -= 0.5f;
+            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
 
-            
 
 
             if (enemy_HP == 0)
             {
+                //エフェクトを生成する
+                GameObject effect = Instantiate(bossEffect) as GameObject;
+                //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
+                effect.transform.position = gameObject.transform.position;
                 Destroy(gameObject);
                 enemy_HP = 2f;
             }

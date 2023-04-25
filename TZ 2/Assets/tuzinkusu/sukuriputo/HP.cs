@@ -21,7 +21,7 @@ public class HP : MonoBehaviour
     void Start()
     {
         life = maxHp;
-        Debug.Log(life);
+        //Debug.Log(life);
 
         _slider = slider.GetComponent<Slider>();//slider‚ðŽæ“¾‚·‚é
     }
