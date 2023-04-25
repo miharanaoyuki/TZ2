@@ -6,10 +6,12 @@ public class Enemy_Exp : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
+    public static float enemy_HP = 3f;
     // Start is called before the first frame update
     void Start()
     {
-        
+      
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); //"SoundManager"Ç∆Ç¢Ç§ñºëOÇ≈åüçı
     }
 
     // Update is called once per frame
@@ -21,14 +23,38 @@ public class Enemy_Exp : MonoBehaviour
     {
         if (other.gameObject.tag == "bullet")
         {
-            soundManager.Play("Enemy_dame");
-            Exp_bar.exp_min += 10;
-            Destroy(gameObject);  
+            soundManager.Play("Enemy");
+            enemy_HP -= Bullet_Destroy.attack;
 
-                
+            Destroy(other.gameObject);
+
+            
+
+            if (enemy_HP == 0)
+            {
+                Destroy(gameObject);
+                enemy_HP = 3f;
+            }    
                 
             
         }
-      
+
+        if (other.gameObject.tag == "sbullet")
+        {
+            soundManager.Play("Enemy");
+
+            enemy_HP -= 0.5f;
+
+
+
+            if (enemy_HP == 0)
+            {
+                Destroy(gameObject);
+                enemy_HP = 3f;
+            }
+
+
+        }
+
     }
 }

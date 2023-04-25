@@ -45,10 +45,7 @@ public class HP : MonoBehaviour
             life = MAX;
             die();
         }
-        if (Input.GetKeyDown("a"))
-        {
-            life--;
-        }
+        
 
     }
 

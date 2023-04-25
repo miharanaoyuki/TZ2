@@ -3,7 +3,7 @@ using UnityEngine;
 // プレイヤーを制御するコンポーネント
 public class PlayerMove : MonoBehaviour
 {
-    public float m_speed; // 移動の速さ
+    public static float m_speed = 0.07f; // 移動の速さ
 
     // プレイヤーのインスタンスを管理する static 変数
     public static PlayerMove m_instance;
@@ -29,6 +29,20 @@ public class PlayerMove : MonoBehaviour
         transform.localPosition += velocity;
 
         // プレイヤーが画面外に出ないように位置を制限する
-        transform.localPosition = Utils.ClampPosition(transform.localPosition);
+        //transform.localPosition = Utils.ClampPosition(transform.localPosition);
+
+        // プレイヤーのスクリーン座標を計算する
+        var screenPos = Camera.main.WorldToScreenPoint(transform.position);
+
+        // プレイヤーから見たマウスカーソルの方向を計算する
+        var direction = Input.mousePosition - screenPos;
+
+        // マウスカーソルが存在する方向の角度を取得する
+        var angle = Utils.GetAngle(Vector3.zero, direction);
+
+        // プレイヤーがマウスカーソルの方向を見るようにする
+        var angles = transform.localEulerAngles;
+        angles.z = angle - 90;
+        transform.localEulerAngles = angles;
     }
 }

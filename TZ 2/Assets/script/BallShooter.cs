@@ -8,8 +8,9 @@ public class BallShooter : MonoBehaviour
     [SerializeField]
     private SoundManager soundManager;
 
+    public static bool attack_flag = true;
 
-
+    public static float attack_speed = 0.6f;
 
     void Start()
     {
@@ -19,7 +20,7 @@ public class BallShooter : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && attack_flag == true)
         {
 
             // 弾（ゲームオブジェクト）の生成
@@ -36,9 +37,15 @@ public class BallShooter : MonoBehaviour
             
 
                 soundManager.Play("atcck");
-                
-            
+
+            attack_flag = false;
+            Invoke("attack", attack_speed);　// 関数Test1を3秒後に実行
 
         }
+    }
+
+    void attack()
+    {
+        attack_flag = true;
     }
 }

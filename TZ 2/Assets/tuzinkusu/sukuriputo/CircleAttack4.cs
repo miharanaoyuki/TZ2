@@ -24,7 +24,7 @@ public class CircleAttack4 : MonoBehaviour
 	float followRate = 0.1f;
 
 	//追尾するポイントのプレイヤーからの距離(つまり小さい程、近付く)。
-	float followTargetDistance = 3.0f;
+	float followTargetDistance = 1.5f;
 
 	float speed;
 	bool flag = true;
