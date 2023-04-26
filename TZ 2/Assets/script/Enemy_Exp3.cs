@@ -51,7 +51,7 @@ public class Enemy_Exp3 : MonoBehaviour
 
 
 
-            if (enemy_HP == 0)
+            if (enemy_HP <= 0)
             {
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;

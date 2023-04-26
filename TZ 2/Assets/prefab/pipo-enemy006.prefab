@@ -16,10 +16,10 @@ GameObject:
   - component: {fileID: 860069885}
   m_Layer: 0
   m_Name: pipo-enemy006
-  m_TagString: Untagged
+  m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5083939057392307883
 Transform:
@@ -121,10 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d00a28c9dc3cd4db4fe30be7842742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point2: {fileID: 0}
-  point3: {fileID: 0}
-  point4: {fileID: 0}
-  point5: {fileID: 0}
+  point2: {fileID: 5260643167049257858, guid: 8d02532913ffd894389c179eb742c0bf, type: 3}
+  point3: {fileID: 6843731572075308315, guid: 952eddd6aff1dd14eb813a3498207426, type: 3}
+  point4: {fileID: 2637907699493504737, guid: 4057752a0decf7843b93a5fa25976850, type: 3}
+  point5: {fileID: 7443794926981757670, guid: 652c4e544d6f579428677ff4594ed7da, type: 3}
 --- !u!68 &860069884
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -208,3 +208,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundManager: {fileID: 0}
+  bossEffect: {fileID: 8701414765290051853, guid: 0c4e88fab39883e43bb79081ab3de3a4, type: 3}
+  particleObject: {fileID: 5398870558487938495, guid: 6fd963244209ced4ea61003df7a67835, type: 3}
