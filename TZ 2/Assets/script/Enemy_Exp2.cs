@@ -31,7 +31,7 @@ public class Enemy_Exp2 : MonoBehaviour
 
             
 
-            if (enemy_HP == 0)
+            if (enemy_HP <= 0)
             {
                 Destroy(gameObject);
                 enemy_HP = 1f;
