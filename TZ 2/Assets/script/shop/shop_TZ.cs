@@ -16,7 +16,11 @@ public class shop_TZ : MonoBehaviour
 
     private void Shaving()
     {
-        
+        if (TZ_coin.Get_coin < 11 && TZ_coin.CoinNum > 2)
+        {
+            TZ_coin.CoinNum -= 3;
+            TZ_coin.Get_coin += 1;
+        }
     }
 
     private void OnMouseOver()

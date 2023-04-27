@@ -16,8 +16,9 @@ public class shop_HP : MonoBehaviour
 
     private void Shaving()
     {
-        if(HP.MAX < 30)
+        if(HP.MAX < 30 && TZ_coin.CoinNum > 2)
         {
+            TZ_coin.CoinNum -= 3;
             HP.MAX += 1;
             HP.maxHp += 1;
         }

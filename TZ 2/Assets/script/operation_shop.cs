@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class operation_over : MonoBehaviour
+public class operation_shop : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,13 +17,14 @@ public class operation_over : MonoBehaviour
         EndGame();
         if (Input.GetKey(KeyCode.Return))
         {
+            TZ_coin.CoinNum = 0;
             ChangeScene();
         }
     }
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("shop");
+        SceneManager.LoadScene("Rule");
     }
     private void EndGame()
     {

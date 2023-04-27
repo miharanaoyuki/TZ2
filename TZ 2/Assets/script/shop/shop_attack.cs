@@ -17,8 +17,12 @@ public class shop_attack : MonoBehaviour
 
     private void Shaving()
     {
-        if(BallShooter.attack_speed > 0.4f)
-        BallShooter.attack_speed -= 0.03f;
+        if(BallShooter.attack_speed > 0.4f && TZ_coin.CoinNum >2)
+        {
+            TZ_coin.CoinNum -= 3;
+            BallShooter.attack_speed -= 0.03f;
+        }
+        
     }
 
     private void OnMouseOver()

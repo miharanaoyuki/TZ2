@@ -32,6 +32,7 @@ public class Enemy_Exp3 : MonoBehaviour
 
             if (enemy_HP == 0)
             {
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ();
                 Destroy(gameObject);
                 enemy_HP = 1f;
             }
@@ -57,6 +58,7 @@ public class Enemy_Exp3 : MonoBehaviour
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ();
                 Destroy(gameObject);
                 enemy_HP = 1f;
             }
