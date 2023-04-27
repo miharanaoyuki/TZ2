@@ -16,6 +16,8 @@ public class shop_power : MonoBehaviour
 
     private void Shaving()
     {
+        if(TZ_coin.CoinNum > 2)
+        TZ_coin.CoinNum -= 3;
         Bullet_Destroy.attack += 0.5f;
     }
 

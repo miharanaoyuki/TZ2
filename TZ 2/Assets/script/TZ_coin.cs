@@ -19,7 +19,7 @@ public class TZ_coin : MonoBehaviour
     void Update()
     {
         TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
-        CoinText.text = "Coin:" + CoinNum;
+        CoinText.text = "TZ:" + CoinNum;
 
         //if (Input.GetMouseButtonDown(0))
         //{
@@ -30,5 +30,10 @@ public class TZ_coin : MonoBehaviour
     public void TZ()
     {
         CoinNum += Get_coin;
+    }
+
+    public void Boss1()
+    {
+        CoinNum += 20;
     }
 }

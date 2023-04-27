@@ -23,7 +23,7 @@ public class operation_over : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("Rule");
+        SceneManager.LoadScene("shop");
     }
     private void EndGame()
     {
