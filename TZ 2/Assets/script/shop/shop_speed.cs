@@ -19,10 +19,10 @@ public class shop_speed : MonoBehaviour
 
     private void Shaving()
     {
-        if(PlayerMove.m_speed < 0.2f && TZ_coin.CoinNum > 2)
+        if(Hero_Move.speed < 0.01f && TZ_coin.CoinNum > 2)
         {
             TZ_coin.CoinNum -= 3;
-            PlayerMove.m_speed += 0.05f;
+            Hero_Move.speed += 0.002f;
         }
         
     }

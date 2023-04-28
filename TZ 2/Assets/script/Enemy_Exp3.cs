@@ -30,7 +30,7 @@ public class Enemy_Exp3 : MonoBehaviour
 
            
 
-            if (enemy_HP == 0)
+            if (enemy_HP <= 0)
             {
                 GameObject.Find("Coin").GetComponent<TZ_coin>().TZ();
                 Destroy(gameObject);
@@ -46,7 +46,7 @@ public class Enemy_Exp3 : MonoBehaviour
         {
             soundManager.Play("Enemy");
            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
-            enemy_HP -= 0.5f;
+            enemy_HP -= 0.25f;
 
           
 

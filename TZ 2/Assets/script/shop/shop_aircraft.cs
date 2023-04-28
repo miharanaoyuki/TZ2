@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class shop_aircraft : MonoBehaviour
 {
-    [SerializeField]
-    private SpriteRenderer sheepRenderer;
-    [SerializeField]
-    private Sprite cutSheepSprite;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +16,33 @@ public class shop_aircraft : MonoBehaviour
 
     private void Shaving()
     {
-        sheepRenderer.sprite = cutSheepSprite;
+        if (generation.S_1 == false && TZ_coin.CoinNum >= 50)
+        {
+            TZ_coin.CoinNum -= 50;
+            generation.S_1 = true;
+            return;
+        }
+
+        if (generation.S_1 == true && TZ_coin.CoinNum >= 100 && generation.S_2 == false)
+        {
+            TZ_coin.CoinNum -= 100;
+            generation.S_2 = true;
+            return;
+        }
+
+        if (generation.S_2 == true && TZ_coin.CoinNum >= 150 && generation.S_3 == false)
+        {
+            TZ_coin.CoinNum -= 150;
+            generation.S_3 = true;
+            return;
+        }
+
+        if (generation.S_3 == true && TZ_coin.CoinNum >= 200 && generation.S_4 == false)
+        {
+            TZ_coin.CoinNum -= 200;
+            generation.S_4 = true;
+            return;
+        }
     }
 
     private void OnMouseOver()

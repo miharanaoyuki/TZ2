@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3681394788272725078}
   - component: {fileID: 854818700123143817}
   - component: {fileID: -2383338689546421990}
-  - component: {fileID: -1667961574972664316}
   - component: {fileID: 9082199490508192414}
+  - component: {fileID: -4528120005456951091}
   m_Layer: 0
   m_Name: smallattack 1
   m_TagString: sbullet
@@ -121,18 +121,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-1667961574972664316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8298864362898316996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34a995a78ad029b4e8d7b303e4127347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &9082199490508192414
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -149,3 +137,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.035681725}
   serializedVersion: 2
   m_Radius: 6.679821
+--- !u!114 &-4528120005456951091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8298864362898316996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce5cacff5e0e784ba7cdf04ef441e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
