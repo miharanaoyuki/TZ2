@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -732,8 +732,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 0}
-  m_SizeDelta: {x: 934.57, y: 333.6627}
+  m_AnchoredPosition: {x: -0.000013351, y: 0}
+  m_SizeDelta: {x: 1123.1488, y: 401.0002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767446217
 MonoBehaviour:
@@ -795,8 +795,8 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.93598723
-  usePosition: 0
+  m_progress: 0.7510772
+  usePosition: 1
   useRotation: 0
   useScale: 0
   useAlpha: 0
@@ -809,7 +809,7 @@ MonoBehaviour:
       m_Calls: []
   characterNumber: 11
   positionFrom: {x: 0, y: 0, z: 0}
-  positionTo: {x: 0, y: 0, z: 0}
+  positionTo: {x: 0, y: 50, z: 0}
   positionAnimationCurve:
     serializedVersion: 2
     m_Curve:
@@ -817,22 +817,22 @@ MonoBehaviour:
       time: 0
       value: 0
       inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
+    - serializedVersion: 3
+      time: 0.36719757
+      value: 0.929245
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
-    m_PostInfinity: 2
+    m_PostInfinity: 1
     m_RotationOrder: 4
   positionSeparation: 0.5
   rotationFrom: 0
@@ -1008,8 +1008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 297, y: -182}
-  m_SizeDelta: {x: 281.9346, y: 55.6704}
+  m_AnchoredPosition: {x: 322, y: -193.72}
+  m_SizeDelta: {x: 375.8205, y: 62.707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1863547708
 MonoBehaviour:
