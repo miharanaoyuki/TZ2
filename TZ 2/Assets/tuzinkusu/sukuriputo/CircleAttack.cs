@@ -54,14 +54,14 @@ public class CircleAttack: MonoBehaviour
 				//敵キャラからプレイヤーへの横向きのベクトルが、マイナスならば左向きに、プラスならば右向きに設定。0ならば無視。
 				//RotateAroundで向きが変わるので、毎フレームRotationを上書きしている。
 				//Rotation自体を変えると不都合なら、SpriteRenderer.flipXを切り替えても良い。  
-				if (GameManager.Instance.player.tf.position.x - tf.position.x < 0)
-				{
-					tf.rotation = leftRotation;
-				}
-				else if (0 < GameManager.Instance.player.tf.position.x - tf.position.x)
-				{
-					tf.rotation = rightRotation;
-				}
+				//if (GameManager.Instance.player.tf.position.x - tf.position.x < 0)
+				//{
+				//	tf.rotation = leftRotation;
+				//}
+				//else if (0 < GameManager.Instance.player.tf.position.x - tf.position.x)
+				//{
+				//	tf.rotation = rightRotation;
+				//}
 
 
 			}

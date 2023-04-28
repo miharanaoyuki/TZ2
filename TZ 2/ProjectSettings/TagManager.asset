@@ -8,6 +8,10 @@ TagManager:
   - bullet
   - sbullet
   - boss
+  - Wall_flag_N
+  - Wall_flag_S
+  - Wall_flag_E
+  - Wall_flag_W
   layers:
   - Default
   - TransparentFX

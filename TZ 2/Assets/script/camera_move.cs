@@ -9,6 +9,7 @@ public class camera_move : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+
 		this.camera = GameObject.Find("Main Camera");
 		this.player = GameObject.Find("hero2");
 	}
@@ -16,6 +17,10 @@ public class camera_move : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
+		// ÉQÅ[ÉÄÇ 60 FPS å≈íËÇ…Ç∑ÇÈ
+		Application.targetFrameRate = 60;
+
+
 		float x_speed = 0f;
 		float xspeed = 0f;
 		float y_speed = 0f;

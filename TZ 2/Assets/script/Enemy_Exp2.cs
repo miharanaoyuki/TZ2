@@ -48,12 +48,12 @@ public class Enemy_Exp2 : MonoBehaviour
         {
             soundManager.Play("Enemy");
             Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
-            enemy_HP -= 0.5f;
+            enemy_HP -= 0.25f;
 
             
 
 
-            if (enemy_HP == 0)
+            if (enemy_HP <= 0)
             {
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;

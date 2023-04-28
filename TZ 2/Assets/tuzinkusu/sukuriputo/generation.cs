@@ -10,6 +10,11 @@ public class generation : MonoBehaviour
 	public GameObject bullet4;//作るプレハブ：Inspectorで指定
 	public float intervalSec = 1; //作成間隔（秒）：Inspectorで指定する
 
+	public static bool S_1 = false;
+	public static bool S_2 = false;
+	public static bool S_3 = false;
+	public static bool S_4 = false;
+
 	public static int num =0;
 
 	public static bool com =false;
@@ -33,6 +38,7 @@ public class generation : MonoBehaviour
 	{
 		//指定秒ごとに、CreatePrefabをくり返し実行する予約
 		InvokeRepeating("CreatePrefab", intervalSec, intervalSec);
+		num = 0;
 	}
 
 
@@ -48,23 +54,36 @@ public class generation : MonoBehaviour
 		//プレハブを作る
 		if (num == 0)
 		{
-			GameObject newGameObject = Instantiate(bullet) as GameObject;
-			newGameObject.transform.position = newPos;
+			if(S_1 == true)
+            {
+				GameObject newGameObject = Instantiate(bullet) as GameObject;
+				newGameObject.transform.position = newPos;
+			}
+			
 		}
 		if (num == 1)
 		{
-			GameObject newGameObject2 = Instantiate(bullet2) as GameObject;
-			newGameObject2.transform.position = newPos;
+			if (S_2 == true)
+			{
+				GameObject newGameObject2 = Instantiate(bullet2) as GameObject;
+				newGameObject2.transform.position = newPos;
+			}
 		}
 		if (num == 2)
 		{
-			GameObject newGameObject3 = Instantiate(bullet3) as GameObject;
-			newGameObject3.transform.position = newPos;
+			if (S_3 == true)
+			{
+				GameObject newGameObject3 = Instantiate(bullet3) as GameObject;
+				newGameObject3.transform.position = newPos;
+			}
         }
         if (num == 3)
         {
-            GameObject newGameObject4 = Instantiate(bullet4) as GameObject;
-            newGameObject4.transform.position = newPos;
+			if (S_4 == true)
+			{
+				GameObject newGameObject4 = Instantiate(bullet4) as GameObject;
+				newGameObject4.transform.position = newPos;
+			}
 			
         }
 		
