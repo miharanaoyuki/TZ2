@@ -210,3 +210,4 @@ MonoBehaviour:
   soundManager: {fileID: 0}
   bossEffect: {fileID: 8701414765290051853, guid: 0c4e88fab39883e43bb79081ab3de3a4, type: 3}
   particleObject: {fileID: 5398870558487938495, guid: 6fd963244209ced4ea61003df7a67835, type: 3}
+  slider: {fileID: 8973725418031858282, guid: d8e737080fdb5154d8bfc5f81a100e1e, type: 3}
