@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 1796605339680987380}
   - component: {fileID: 945540443068562643}
   - component: {fileID: 6832398913724062591}
+  - component: {fileID: -8542771911057504793}
+  - component: {fileID: 3548307877872249957}
+  - component: {fileID: -8814827651061070134}
   m_Layer: 0
   m_Name: boos2
   m_TagString: boss
@@ -185,3 +188,50 @@ MonoBehaviour:
   bossEffect: {fileID: 8701414765290051853, guid: 0c4e88fab39883e43bb79081ab3de3a4, type: 3}
   particleObject: {fileID: 5398870558487938495, guid: 6fd963244209ced4ea61003df7a67835, type: 3}
   slider: {fileID: 229118326652661604, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
+--- !u!114 &-8542771911057504793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965602191144147550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e339890a579496e488fa54826640b755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 8006298572035451320, guid: 0accad71ba392db4c82234161d28b9bf, type: 3}
+  soundManager: {fileID: 5687635236622359513, guid: c964315bafa64344aa53117b040415f1, type: 3}
+  intervalSec: 1
+--- !u!114 &3548307877872249957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965602191144147550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44fdc0fa75c35d4dbb08ec1b5db156e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab1: {fileID: 8006298572035451320, guid: ab60abb8ae629524fb0a01060c398f09, type: 3}
+  bulletPrefab2: {fileID: 8006298572035451320, guid: f68083b208da793429f903cf62836ddd, type: 3}
+  bulletPrefab3: {fileID: 8006298572035451320, guid: a65a3a6e8551c2f488bac89a64bf95a6, type: 3}
+  bulletPrefab4: {fileID: 8006298572035451320, guid: 191d52923cb5f2a49be89a9163b466b9, type: 3}
+  timeLimit: 3
+--- !u!114 &-8814827651061070134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965602191144147550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c326dcf2903187469617615bde0f341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 8006298572035451320, guid: ecf4a15e5c0ec304c945f0910c019871, type: 3}
+  soundManager: {fileID: 0}
+  intervalSec: 1
