@@ -4,6 +4,7 @@ using UnityEngine;
 public class bossManager : MonoBehaviour
 {
     public GameObject boss;
+    public GameObject boss_HP;
     public float boss_interval;
 
     public static bool boss_flag = false;
@@ -21,6 +22,8 @@ public class bossManager : MonoBehaviour
    
     void Boss()
     {
+
+        boss_HP.gameObject.SetActive(true);
         GameObject clone = Instantiate(boss, transform.position, Quaternion.identity);
 
 
