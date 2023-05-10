@@ -15,11 +15,11 @@ public class gimmick1_move2 : MonoBehaviour
     {
         transform.Translate(0.1f, 0, 0);
 
-        //if (transform.position.y > 5)
-        //{
-        //    {
-        //        Destroy(gameObject);
-        //    }
-        //}
+        if (transform.position.x > 20)
+        {
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }
