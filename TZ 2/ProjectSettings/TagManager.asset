@@ -12,6 +12,7 @@ TagManager:
   - Wall_flag_S
   - Wall_flag_E
   - Wall_flag_W
+  - Enemy_At
   layers:
   - Default
   - TransparentFX
