@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8779251128162456443}
   - component: {fileID: 7649771915904287576}
   - component: {fileID: 2587337822241025721}
+  - component: {fileID: 7125367972307653817}
   m_Layer: 0
   m_Name: enemy5
   m_TagString: Enemy
@@ -182,3 +183,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &7125367972307653817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063308649704514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e339890a579496e488fa54826640b755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 8006298572035451320, guid: 0accad71ba392db4c82234161d28b9bf, type: 3}
+  soundManager: {fileID: 0}
+  intervalSec: 3

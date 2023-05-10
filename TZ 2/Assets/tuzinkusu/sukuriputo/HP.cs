@@ -80,6 +80,13 @@ public class HP : MonoBehaviour
             soundManager.Play("Player_Damage");
             life--;
         }
+
+        if (other.gameObject.tag == "Enemy_At")
+        {
+
+            soundManager.Play("damage");
+            life--;
+        }
     }
 
 

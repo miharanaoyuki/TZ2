@@ -21,7 +21,7 @@ public class Hero_Move: MonoBehaviour
         Vector2 position = transform.position;
         if (Wall_flag_W == false)
         {
-            if (Input.GetKey("left"))
+            if (Input.GetKey("left")|| Input.GetKey("a"))
             {
                 position.x -= speed;
             }
@@ -30,7 +30,7 @@ public class Hero_Move: MonoBehaviour
 
         if (Wall_flag_E == false)
         {
-            if (Input.GetKey("right"))
+            if (Input.GetKey("right") || Input.GetKey("d"))
             {
                 position.x += speed;
             }
@@ -39,7 +39,7 @@ public class Hero_Move: MonoBehaviour
 
         if (Wall_flag_N == false)
         {
-            if (Input.GetKey("up"))
+            if (Input.GetKey("up") || Input.GetKey("w"))
             {
                 position.y += speed;
             }
@@ -48,7 +48,7 @@ public class Hero_Move: MonoBehaviour
 
         if (Wall_flag_S == false)
         {
-            if (Input.GetKey("down"))
+            if (Input.GetKey("down") || Input.GetKey("s"))
             {
                 position.y -= speed;
             }
