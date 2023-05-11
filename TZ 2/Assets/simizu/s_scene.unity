@@ -740,6 +740,8 @@ GameObject:
   - component: {fileID: 553150781}
   - component: {fileID: 553150780}
   - component: {fileID: 553150783}
+  - component: {fileID: 553150784}
+  - component: {fileID: 553150785}
   m_Layer: 0
   m_Name: hero2
   m_TagString: Untagged
@@ -833,12 +835,44 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553150779}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f48ba8830fdb0c4c911b3ca17f9e3ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   particleObject: {fileID: 5398870558487938495, guid: 6fd963244209ced4ea61003df7a67835, type: 3}
+--- !u!95 &553150784
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553150779}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 72da7a2a7a0010a4193d2e94b7a6f3eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &553150785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553150779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf260428ab0a6c4288470482b3caa62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &602184435
 GameObject:
   m_ObjectHideFlags: 0

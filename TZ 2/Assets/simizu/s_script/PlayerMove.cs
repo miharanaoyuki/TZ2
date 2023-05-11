@@ -3,7 +3,7 @@ using UnityEngine;
 // プレイヤーを制御するコンポーネント
 public class PlayerMove : MonoBehaviour
 {
-    public static float m_speed = 0.07f; // 移動の速さ
+    public static float m_speed = 0.1f; // 移動の速さ
 
     // プレイヤーのインスタンスを管理する static 変数
     public static PlayerMove m_instance;
@@ -41,8 +41,8 @@ public class PlayerMove : MonoBehaviour
         var angle = Utils.GetAngle(Vector3.zero, direction);
 
         // プレイヤーがマウスカーソルの方向を見るようにする
-        var angles = transform.localEulerAngles;
-        angles.z = angle - 90;
-        transform.localEulerAngles = angles;
+        //var angles = transform.localEulerAngles;
+        //angles.z = angle - 90;
+        //transform.localEulerAngles = angles;
     }
 }
