@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4766555100755036662}
   - component: {fileID: 1294284697782234300}
   - component: {fileID: 6730326582681474860}
-  - component: {fileID: 790563633808639001}
-  - component: {fileID: 2998239977440816073}
+  - component: {fileID: 5103769252697517192}
+  - component: {fileID: -7354524238398143063}
   m_Layer: 0
-  m_Name: enemy_bullet1
+  m_Name: bos3_bullet 4
   m_TagString: Enemy_At
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 480a840449f0d3241a4e068a16d768c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b83769bf422515240891bf9284bc07f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,7 +108,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &790563633808639001
+--- !u!58 &5103769252697517192
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,10 +121,10 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.035871662}
+  m_Offset: {x: 0, y: -0.06629268}
   serializedVersion: 2
-  m_Radius: 1.8099223
---- !u!114 &2998239977440816073
+  m_Radius: 1.8489896
+--- !u!114 &-7354524238398143063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,6 +133,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8006298572035451320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7238b1863d6a2dd479f13433b4854666, type: 3}
+  m_Script: {fileID: 11500000, guid: 15dea0a8edf70b04e806e40cdd974fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

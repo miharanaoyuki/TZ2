@@ -85,6 +85,14 @@ public class HP : MonoBehaviour
         {
 
             soundManager.Play("damage");
+            Destroy(other.gameObject);
+            life--;
+
+        }
+        if(other.gameObject.tag == "gimmick")
+        {
+
+            soundManager.Play("damage");
             life--;
         }
     }

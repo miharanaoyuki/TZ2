@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bullet_left : MonoBehaviour
+public class bullet_UR : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,9 +13,9 @@ public class bullet_left : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(-0.2f, 0, 0);
+        transform.Translate(0.2f, 0.2f, 0);
 
-        if (transform.position.x < -20)
+        if (transform.position.x > 20)
         {
             Destroy(gameObject);
         }
