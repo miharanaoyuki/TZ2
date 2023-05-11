@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/main2.unity
     guid: a780834cad2c7724b933c7c0bf0730ae
   - enabled: 1
+    path: Assets/Scenes/main3.unity
+    guid: ae3cfb1bc0d1fce46b4bba2760735ab5
+  - enabled: 1
     path: Assets/Scenes/Clear.unity
     guid: 77d22392392b0494aa4959dc0a11c6ca
   - enabled: 1
