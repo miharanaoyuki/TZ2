@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1711817411275036801}
   - component: {fileID: 8779251128162456443}
   - component: {fileID: 8500623330146199136}
+  - component: {fileID: 2806117040386323403}
   m_Layer: 0
   m_Name: gimmick1_3
-  m_TagString: Enemy
+  m_TagString: gimmick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: f9babd1af297f47409b856c9d72a6c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf5b1ddecf154fd49a195b8482493284, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,3 +120,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0dd6cd87bbfa574b94dec531a7be5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2806117040386323403
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063308649704514495}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.01619339, y: 0.011176109}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.82, y: 8.82}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.17256546, y: 4.2824764}
+  m_EdgeRadius: 0
