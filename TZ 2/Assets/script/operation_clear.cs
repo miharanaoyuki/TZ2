@@ -23,7 +23,7 @@ public class operation_clear : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("shop");
+        SceneManager.LoadScene("Select");
     }
     private void EndGame()
     {
