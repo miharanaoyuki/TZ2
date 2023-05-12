@@ -20,7 +20,7 @@ public class player_move_anim : MonoBehaviour
         if((Input.GetKey("up") && Input.GetKey("left"))||
            (Input.GetKey("w")&& Input.GetKey("a")))
         {
-            transform.localScale = new Vector3(10, 10, 1);
+            transform.localScale = new Vector3(5, 5, 5);
             anim.SetBool("Up_LeftOrRight", true);
 
             anim.SetBool("Up", false);
@@ -32,7 +32,7 @@ public class player_move_anim : MonoBehaviour
         else if ((Input.GetKey("up") && Input.GetKey("right")) ||
            (Input.GetKey("w") && Input.GetKey("d")))
         {
-            transform.localScale = new Vector3(-10, 10, 1);
+            transform.localScale = new Vector3(-5, 5, 5);
             anim.SetBool("Up_LeftOrRight", true);
 
             anim.SetBool("Up", false);
@@ -44,7 +44,7 @@ public class player_move_anim : MonoBehaviour
         else if ((Input.GetKey("down") && Input.GetKey("left")) ||
            (Input.GetKey("s") && Input.GetKey("a")))
         {
-            transform.localScale = new Vector3(10, 10, 1);
+            transform.localScale = new Vector3(5, 5, 5);
             anim.SetBool("Down_LeftOrRight", true);
 
             anim.SetBool("Up", false);
@@ -57,7 +57,7 @@ public class player_move_anim : MonoBehaviour
         else if ((Input.GetKey("down") && Input.GetKey("right")) ||
            (Input.GetKey("s") && Input.GetKey("d")))
         {
-            transform.localScale = new Vector3(-10, 10, 1);
+            transform.localScale = new Vector3(-5, 5, 5);
             anim.SetBool("Down_LeftOrRight", true);
 
             anim.SetBool("Up", false);
@@ -78,7 +78,7 @@ public class player_move_anim : MonoBehaviour
 
         else if (Input.GetKey("left") || Input.GetKey("a"))
         {
-            transform.localScale = new Vector3(10, 10, 1);
+            transform.localScale = new Vector3(5, 5, 5);
             anim.SetBool("LeftOrRight", true);
 
             anim.SetBool("Up", false);
@@ -89,7 +89,7 @@ public class player_move_anim : MonoBehaviour
 
         else if (Input.GetKey("right") || Input.GetKey("d"))
         {
-            transform.localScale = new Vector3(-10, 10, 1);
+            transform.localScale = new Vector3(-5, 5, 5);
             anim.SetBool("LeftOrRight", true);
 
             anim.SetBool("Up", false);
