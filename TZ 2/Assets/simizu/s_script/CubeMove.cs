@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CubeMove : MonoBehaviour
 {
-    private float speed = 3.0f;
+    public float speed = 3.0f;
     private int count = 1;
     [SerializeField] Transform point2;
     [SerializeField] Transform point3;

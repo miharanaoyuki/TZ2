@@ -6,7 +6,7 @@ public class Enemy_Exp6 : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
-    public static float enemy_HP = 3f;
+    public static float enemy_HP = 6f;
     public GameObject particleObject;
     public GameObject bossEffect;
     // Start is called before the first frame update
@@ -33,7 +33,7 @@ public class Enemy_Exp6 : MonoBehaviour
 
             if (enemy_HP <= 0)
             {
-                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ2();
                 Destroy(gameObject);
                 enemy_HP = 3;
             }
@@ -59,7 +59,7 @@ public class Enemy_Exp6 : MonoBehaviour
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
-                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ2();
                 Destroy(gameObject);
                 enemy_HP = 3f;
             }

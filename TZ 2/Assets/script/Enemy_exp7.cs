@@ -6,7 +6,7 @@ public class Enemy_exp7 : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
-    public static float enemy_HP = 5f;
+    public static float enemy_HP = 8f;
     public GameObject bossEffect;
     public GameObject particleObject;
 
@@ -40,7 +40,7 @@ public class Enemy_exp7 : MonoBehaviour
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
-                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ2();
                 Destroy(gameObject);
                 enemy_HP = 5f;
             }
@@ -62,7 +62,7 @@ public class Enemy_exp7 : MonoBehaviour
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
-                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ2();
                 Destroy(gameObject);
                 enemy_HP = 5f;
             }

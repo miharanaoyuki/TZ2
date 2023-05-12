@@ -16,30 +16,30 @@ public class shop_aircraft : MonoBehaviour
 
     private void Shaving()
     {
-        if (generation.S_1 == false && TZ_coin.CoinNum >= 50)
+        if (generation.S_1 == false && TZ_coin.CoinNum >= 100)
         {
-            TZ_coin.CoinNum -= 50;
+            TZ_coin.CoinNum -= 100;
             generation.S_1 = true;
             return;
         }
 
-        if (generation.S_1 == true && TZ_coin.CoinNum >= 100 && generation.S_2 == false)
+        if (generation.S_1 == true && TZ_coin.CoinNum >= 200 && generation.S_2 == false)
         {
-            TZ_coin.CoinNum -= 100;
+            TZ_coin.CoinNum -= 200;
             generation.S_2 = true;
             return;
         }
 
-        if (generation.S_2 == true && TZ_coin.CoinNum >= 150 && generation.S_3 == false)
+        if (generation.S_2 == true && TZ_coin.CoinNum >= 300 && generation.S_3 == false)
         {
-            TZ_coin.CoinNum -= 150;
+            TZ_coin.CoinNum -= 300;
             generation.S_3 = true;
             return;
         }
 
-        if (generation.S_3 == true && TZ_coin.CoinNum >= 200 && generation.S_4 == false)
+        if (generation.S_3 == true && TZ_coin.CoinNum >= 400 && generation.S_4 == false)
         {
-            TZ_coin.CoinNum -= 200;
+            TZ_coin.CoinNum -= 400;
             generation.S_4 = true;
             return;
         }
