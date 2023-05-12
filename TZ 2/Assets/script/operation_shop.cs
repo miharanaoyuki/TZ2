@@ -14,17 +14,12 @@ public class operation_shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EndGame();
-        if (Input.GetKey(KeyCode.Return))
-        {
-            TZ_coin.CoinNum = 0;
-            ChangeScene();
-        }
+        
     }
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("Rule");
+        SceneManager.LoadScene("select");
     }
     private void EndGame()
     {
@@ -39,5 +34,10 @@ public class operation_shop : MonoBehaviour
 #endif
         }
 
+    }
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0) == false) return;
+        ChangeScene();
     }
 }
