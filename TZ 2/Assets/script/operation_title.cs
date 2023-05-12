@@ -14,11 +14,7 @@ public class operation_title : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EndGame();
-        if (Input.GetKey(KeyCode.Return))
-        {
-            ChangeScene();
-        }
+       
     }
 
     void ChangeScene()
@@ -38,5 +34,11 @@ public class operation_title : MonoBehaviour
 #endif
         }
 
+    }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0) == false) return;
+        ChangeScene();
     }
 }
