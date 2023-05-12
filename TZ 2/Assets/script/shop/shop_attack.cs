@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class shop_attack : MonoBehaviour
 {
+    int TZ = 7;
     
     // Start is called before the first frame update
     void Start()
@@ -17,10 +18,11 @@ public class shop_attack : MonoBehaviour
 
     private void Shaving()
     {
-        if(BallShooter.attack_speed > 0.4f && TZ_coin.CoinNum >2)
+        if(BallShooter.attack_speed > 0.4f && TZ_coin.CoinNum >= TZ)
         {
-            TZ_coin.CoinNum -= 3;
+            TZ_coin.CoinNum -= TZ;
             BallShooter.attack_speed -= 0.03f;
+            TZ += 9;
         }
         
     }

@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_respawnPosInside: {x: 4.8, y: 3.5}
   m_respawnPosOutside: {x: 10, y: 7}
-  m_speed: 0.02
+  m_speed: 0.01
   m_isFollow: 1
 --- !u!50 &8779251128162456443
 Rigidbody2D:

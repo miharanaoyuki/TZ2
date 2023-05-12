@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class HP : MonoBehaviour
 {
-    public static int life = 10;//hpを6にする。SliderのMaxValueとValueはここの値に合わせます
+    public static int life = 5;//hpを6にする。SliderのMaxValueとValueはここの値に合わせます
     private Slider _slider;//Sliderの値を代入する_sliderを宣言
     public GameObject slider;//体力ゲージに指定するSlider
     public static int maxHp=10;
     
 
-    public static int MAX = 10;
+    public static int MAX = 5;
 
 
     [SerializeField]

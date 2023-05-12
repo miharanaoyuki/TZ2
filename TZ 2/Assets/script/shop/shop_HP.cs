@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class shop_HP : MonoBehaviour
 {
+    int TZ = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,12 @@ public class shop_HP : MonoBehaviour
 
     private void Shaving()
     {
-        if(HP.MAX < 30 && TZ_coin.CoinNum > 2)
+        if(HP.MAX < 30 && TZ_coin.CoinNum >= TZ)
         {
-            TZ_coin.CoinNum -= 3;
+            TZ_coin.CoinNum -= TZ;
             HP.MAX += 1;
             HP.maxHp += 1;
+            TZ += 7;
         }
        
     }

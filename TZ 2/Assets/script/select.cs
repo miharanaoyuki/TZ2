@@ -17,13 +17,13 @@ public class select : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Boss_HP2.clear_flag2 == true)
+        if(Boss_HP.clear_flag1 == true)
         {
             text2.SetActive(true);
             main2.SetActive(true);
         }
 
-        if (Boss_HP3.clear_flag3 == true)
+        if (Boss_HP2.clear_flag2 == true)
         {
             text3.SetActive(true);
             main3.SetActive(true);

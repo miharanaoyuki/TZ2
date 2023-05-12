@@ -7,8 +7,8 @@ public class Boss_HP2 : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
-    public static float boss_HP2 = 20f;
-    public static float boss_MAXHP2 = 20f;
+    public static float boss_HP2 = 40f;
+    public static float boss_MAXHP2 = 40f;
     public GameObject bossEffect;
     public GameObject particleObject;
     private Slider _slider;//Sliderの値を代入する_sliderを宣言
@@ -48,7 +48,7 @@ public class Boss_HP2 : MonoBehaviour
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
-                GameObject.Find("Coin").GetComponent<TZ_coin>().Boss1();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().Boss2();
                 SceneManager.LoadScene("Clear");
                 Destroy(gameObject);
             }
@@ -71,7 +71,7 @@ public class Boss_HP2 : MonoBehaviour
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
-                GameObject.Find("Coin").GetComponent<TZ_coin>().Boss1();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().Boss2();
                 SceneManager.LoadScene("Clear");
                 Destroy(gameObject);
             }

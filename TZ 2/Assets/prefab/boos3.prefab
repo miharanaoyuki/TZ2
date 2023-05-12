@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d00a28c9dc3cd4db4fe30be7842742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7
   point2: {fileID: 5260643167049257858, guid: 8d02532913ffd894389c179eb742c0bf, type: 3}
   point3: {fileID: 6843731572075308315, guid: 952eddd6aff1dd14eb813a3498207426, type: 3}
   point4: {fileID: 2637907699493504737, guid: 4057752a0decf7843b93a5fa25976850, type: 3}
