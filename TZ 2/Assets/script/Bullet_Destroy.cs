@@ -36,7 +36,26 @@ public class Bullet_Destroy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        
+
+        if (other.gameObject.tag == "Enemy_At")
+        {
+
+          
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+
+
+        }
+       
+    }
+
+
 }
+
 
 
     

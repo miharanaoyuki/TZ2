@@ -12,9 +12,10 @@ public class Boss3_attack : MonoBehaviour
     public GameObject bulletPrefab6;
     public GameObject bulletPrefab7;
     public GameObject bulletPrefab8;
+    public GameObject bulletPrefab9;
 
     private float counttime = 0.0f;//éûä‘ÇÇÕÇ©ÇÈ
-    public float timeLimit = 3.0f;//êßå¿éûä‘
+    public float timeLimit = 2.0f;//êßå¿éûä‘
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class Boss3_attack : MonoBehaviour
             Instantiate(bulletPrefab6, transform.position, Quaternion.identity);
             Instantiate(bulletPrefab7, transform.position, Quaternion.identity);
             Instantiate(bulletPrefab8, transform.position, Quaternion.identity);
+            Instantiate(bulletPrefab9, transform.position, Quaternion.identity);
         }
     }
 }

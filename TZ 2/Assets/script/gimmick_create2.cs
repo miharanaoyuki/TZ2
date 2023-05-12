@@ -24,7 +24,7 @@ public class gimmick_create2 : MonoBehaviour
     void Start()
     {
         //ŽžŠÔŠÔŠu‚ðŒˆ’è‚·‚é
-        interval = 1f;
+        interval = 3f;
     }
 
     // Update is called once per frame

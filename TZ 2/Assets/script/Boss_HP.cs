@@ -14,6 +14,8 @@ public class Boss_HP : MonoBehaviour
     private Slider _slider;//Sliderの値を代入する_sliderを宣言
     public GameObject slider;//体力ゲージに指定するSlider
 
+    public static bool clear_flag1 = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +46,7 @@ public class Boss_HP : MonoBehaviour
 
             if(boss_HP <= 0)
             {
+                clear_flag1 = true;
                 BallShooter.attack_flag = true;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
@@ -52,6 +55,7 @@ public class Boss_HP : MonoBehaviour
                 GameObject.Find("Coin").GetComponent<TZ_coin>().Boss1();
                 SceneManager.LoadScene("Clear");
                 Destroy(gameObject);
+
             }
 
             
@@ -67,7 +71,7 @@ public class Boss_HP : MonoBehaviour
 
             if (boss_HP <= 0)
             {
-
+                clear_flag1 = true;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)

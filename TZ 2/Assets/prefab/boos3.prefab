@@ -198,4 +198,5 @@ MonoBehaviour:
   bulletPrefab6: {fileID: 8006298572035451320, guid: d22dec40ffc69f54b90bcd5b95686b4d, type: 3}
   bulletPrefab7: {fileID: 8006298572035451320, guid: bdc13ecef8060e9409774cc64803c426, type: 3}
   bulletPrefab8: {fileID: 8006298572035451320, guid: 82105ba2f807f9e40ad25c3a9d69f7b5, type: 3}
+  bulletPrefab9: {fileID: 8006298572035451320, guid: 0a2982b8ae98b494ca37f1706c3832ca, type: 3}
   timeLimit: 3

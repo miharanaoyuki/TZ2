@@ -15,6 +15,7 @@ public class BallShooter : MonoBehaviour
     void Start()
     {
         speed = 10.0f;  // ’e‚Ì‘¬“x
+        attack_flag = true;
     }
 
     void Update()
