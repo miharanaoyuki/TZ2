@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6473656684986416925}
   - component: {fileID: -1077870078758621257}
   - component: {fileID: 1847071961361312010}
+  - component: {fileID: 1584001678596217788}
   - component: {fileID: -8612984166018539317}
   - component: {fileID: -1013467794597605111}
   m_Layer: 0
@@ -125,6 +126,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1584001678596217788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389532204183076421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f32decb07b346f4a9aee4d78b0d8c40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 4043569878914935002, guid: e8229779345d8f641a4a6bca5036706d, type: 3}
+  soundManager: {fileID: 0}
+  m_isFollow: 0
+  intervalSec: 1
 --- !u!68 &-8612984166018539317
 EdgeCollider2D:
   m_ObjectHideFlags: 0
