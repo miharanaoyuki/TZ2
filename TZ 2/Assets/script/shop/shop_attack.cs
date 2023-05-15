@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class shop_attack : MonoBehaviour
 {
+    public GameObject CoinObject = null;
     int TZ = 7;
     
     // Start is called before the first frame update
@@ -14,6 +16,12 @@ public class shop_attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
+        CoinText.text = "TZ:" + TZ;
+        if (BallShooter.attack_speed <= 0.4f && TZ_coin.CoinNum >= TZ)
+        {
+            CoinText.text = "MAX";
+        }
     }
 
     private void Shaving()

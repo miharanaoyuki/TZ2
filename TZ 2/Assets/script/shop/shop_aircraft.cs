@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class shop_aircraft : MonoBehaviour
 {
+    public GameObject CoinObject = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,6 +15,31 @@ public class shop_aircraft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (generation.S_1 == false)
+        {
+            TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
+            CoinText.text = "TZ:100";
+        }
+        if (generation.S_1 == true && generation.S_2 == false)
+        {
+            TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
+            CoinText.text = "TZ:200";
+        }
+        if (generation.S_2 == true && generation.S_3 == false)
+        {
+            TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
+            CoinText.text = "TZ:300";
+        }
+        if (generation.S_3 == true && generation.S_4 == false)
+        {
+            TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
+            CoinText.text = "TZ:400";
+        }
+        if (generation.S_4 == true)
+        {
+            TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
+            CoinText.text = "MAX";
+        }
     }
 
     private void Shaving()

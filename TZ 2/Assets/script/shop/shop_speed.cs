@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class shop_speed : MonoBehaviour
 {
+    public GameObject CoinObject = null;
     int TZ = 5;
     // Start is called before the first frame update
     void Start()
@@ -14,7 +16,12 @@ public class shop_speed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
+        CoinText.text = "TZ:" + TZ;
+        if(Hero_Move.speed >= 0.01f)
+        {
+            CoinText.text = "MAX";
+        }
     }
 
     private void Shaving()
