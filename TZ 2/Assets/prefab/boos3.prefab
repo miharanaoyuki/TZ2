@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4598534532145060333}
   - component: {fileID: 5142310993652205456}
-  - component: {fileID: 1693312247976564275}
   - component: {fileID: 1551485700853182209}
   - component: {fileID: 9009652451285238036}
   - component: {fileID: -1432190473874398159}
   - component: {fileID: 248015957312610196}
+  - component: {fileID: 8643174899872992835}
   m_Layer: 0
   m_Name: boos3
   m_TagString: boss
@@ -89,23 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1693312247976564275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8050871101756752288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26d00a28c9dc3cd4db4fe30be7842742, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
-  point2: {fileID: 5260643167049257858, guid: 8d02532913ffd894389c179eb742c0bf, type: 3}
-  point3: {fileID: 6843731572075308315, guid: 952eddd6aff1dd14eb813a3498207426, type: 3}
-  point4: {fileID: 2637907699493504737, guid: 4057752a0decf7843b93a5fa25976850, type: 3}
-  point5: {fileID: 7443794926981757670, guid: 652c4e544d6f579428677ff4594ed7da, type: 3}
 --- !u!50 &1551485700853182209
 Rigidbody2D:
   serializedVersion: 4
@@ -200,4 +183,16 @@ MonoBehaviour:
   bulletPrefab7: {fileID: 8006298572035451320, guid: bdc13ecef8060e9409774cc64803c426, type: 3}
   bulletPrefab8: {fileID: 8006298572035451320, guid: 82105ba2f807f9e40ad25c3a9d69f7b5, type: 3}
   bulletPrefab9: {fileID: 8006298572035451320, guid: 0a2982b8ae98b494ca37f1706c3832ca, type: 3}
-  timeLimit: 3
+  timeLimit: 2
+--- !u!114 &8643174899872992835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050871101756752288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7086c228feca35d4c97da4c128677226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
