@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_isFollow: 1
-  time: 0
+  time: 1

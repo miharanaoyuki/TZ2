@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -318,6 +318,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &597835416
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4043569878914935002, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 36.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.3641072
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067629893086821202, guid: c964315bafa64344aa53117b040415f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c964315bafa64344aa53117b040415f1, type: 3}
+--- !u!114 &597835417 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5687635236622359513, guid: c964315bafa64344aa53117b040415f1, type: 3}
+  m_PrefabInstance: {fileID: 597835416}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2dcfed49e6f5549aa3bcb930ee65e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1334314500
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ef30573c18b7c4ca62b9ea9ab0c4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundManager: {fileID: 597835417}
 --- !u!212 &1334314502
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -895,7 +964,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.17666668
+  m_progress: 0.8463311
   usePosition: 1
   useRotation: 0
   useScale: 0

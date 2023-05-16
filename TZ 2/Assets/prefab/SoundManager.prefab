@@ -110,4 +110,7 @@ MonoBehaviour:
   - name: Enemy
     audioClip: {fileID: 8300000, guid: 2248c3a815eb48740bee9c386da395be, type: 3}
     playedTime: 0
+  - name: "\u30B7\u30FC\u30F3\u79FB\u52D5"
+    audioClip: {fileID: 8300000, guid: cf091b8b66a832a41a9200e270f2d499, type: 3}
+    playedTime: 0
   playableDistance: 0.2
