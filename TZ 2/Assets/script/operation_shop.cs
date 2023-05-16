@@ -5,21 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class operation_shop : MonoBehaviour
 {
+    [SerializeField]
+    private SoundManager soundManager;
+
+    bool Stop = true;
     // Start is called before the first frame update
     void Start()
     {
-
+        Stop = true;
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); //"SoundManager"Ç∆Ç¢Ç§ñºëOÇ≈åüçı
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("select");
+        SceneManager.LoadScene("Select");
     }
     private void EndGame()
     {
@@ -35,9 +40,20 @@ public class operation_shop : MonoBehaviour
         }
 
     }
+
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) == false) return;
-        ChangeScene();
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (Stop == true)
+            {
+                soundManager.Play("ÉVÅ[Éìà⁄ìÆ");
+                Invoke("ChangeScene", 1);
+                Stop = false;
+            }
+
+        }
+
+        return;
     }
 }

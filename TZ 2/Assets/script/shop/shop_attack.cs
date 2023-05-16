@@ -18,7 +18,7 @@ public class shop_attack : MonoBehaviour
     {
         TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
         CoinText.text = "TZ:" + TZ;
-        if (BallShooter.attack_speed <= 0.4f && TZ_coin.CoinNum >= TZ)
+        if (BallShooter.attack_speed <= 0.4f)
         {
             CoinText.text = "MAX";
         }

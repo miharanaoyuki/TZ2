@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class operation_title : MonoBehaviour
 {
+    [SerializeField]
+    private SoundManager soundManager;
+
+    bool Stop = true;
     // Start is called before the first frame update
     void Start()
     {
-
+        Stop = true;
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); //"SoundManager"Ç∆Ç¢Ç§ñºëOÇ≈åüçı
     }
 
     // Update is called once per frame
@@ -38,7 +43,17 @@ public class operation_title : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) == false) return;
-        ChangeScene();
+        if (Input.GetMouseButtonDown(0) )
+        {
+            if (Stop==true)
+            {
+                soundManager.Play("ÉVÅ[Éìà⁄ìÆ");
+                Invoke("ChangeScene", 1);
+                Stop = false;
+            }
+
+        }
+        
+        return;
     }
 }
