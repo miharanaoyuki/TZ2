@@ -6,7 +6,7 @@ using TMPro;
 public class shop_speed : MonoBehaviour
 {
     public GameObject CoinObject = null;
-    int TZ = 5;
+    public static int TZ = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class shop_speed : MonoBehaviour
     {
         TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
         CoinText.text = "TZ:" + TZ;
-        if(Hero_Move.speed >= 0.01f)
+        if(Hero_Move.speed >= 0.1f)
         {
             CoinText.text = "MAX";
         }
@@ -26,7 +26,7 @@ public class shop_speed : MonoBehaviour
 
     private void Shaving()
     {
-        if(Hero_Move.speed < 0.01f && TZ_coin.CoinNum >= TZ)
+        if(Hero_Move.speed < 0.1f && TZ_coin.CoinNum >= TZ)
         {
             TZ_coin.CoinNum -= TZ;
             Hero_Move.speed += 0.002f;

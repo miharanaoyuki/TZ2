@@ -6,7 +6,7 @@ using TMPro;
 public class shop_attack : MonoBehaviour
 {
     public GameObject CoinObject = null;
-    int TZ = 7;
+    public static int TZ = 7;
     
     // Start is called before the first frame update
     void Start()
