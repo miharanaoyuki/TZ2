@@ -12,8 +12,12 @@ public class Hero_Move: MonoBehaviour
     public static bool Wall_flag_W = false;
     void Start()
     {
-        
 
+        Wall_flag_N = false;
+        Wall_flag_E = false;
+
+        Wall_flag_S = false;
+        Wall_flag_W = false;
     }
 
     void Update()
