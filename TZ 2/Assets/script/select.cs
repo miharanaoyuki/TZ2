@@ -20,13 +20,13 @@ public class select : MonoBehaviour
         if(Boss_HP.clear_flag1 == true)
         {
             text2.SetActive(true);
-            main2.SetActive(true);
+            main2.SetActive(false);
         }
 
         if (Boss_HP2.clear_flag2 == true)
         {
             text3.SetActive(true);
-            main3.SetActive(true);
+            main3.SetActive(false);
         }
     }
 }

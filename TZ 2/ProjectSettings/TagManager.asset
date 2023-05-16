@@ -13,6 +13,7 @@ TagManager:
   - Wall_flag_E
   - Wall_flag_W
   - Enemy_At
+  - gimmick
   layers:
   - Default
   - TransparentFX
@@ -52,4 +53,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: front
+    uniqueID: 2453021693
     locked: 0

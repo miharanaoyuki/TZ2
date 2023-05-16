@@ -2343,6 +2343,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1658104496, guid: baef3049de0b69c4492e4134d71c3d81, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 84f73fd58afcbb342a4e53ff2c8abb1d, type: 3}
     - target: {fileID: 97556578927382921, guid: baef3049de0b69c4492e4134d71c3d81, type: 3}
       propertyPath: soundManager
       value: 
@@ -2450,3 +2454,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf260428ab0a6c4288470482b3caa62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &97556580575001371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97556580575001368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e7fe0266cdf3649acef7f2138536c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 84f73fd58afcbb342a4e53ff2c8abb1d, type: 3}
