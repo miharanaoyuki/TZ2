@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +12,6 @@ public class Hero_Move: MonoBehaviour
     public static bool Wall_flag_W = false;
     void Start()
     {
-
         Wall_flag_N = false;
         Wall_flag_E = false;
 
@@ -61,16 +60,16 @@ public class Hero_Move: MonoBehaviour
                 }
             }
         }
-        // ƒvƒŒƒCƒ„[‚ÌƒXƒNƒŠ[ƒ“À•W‚ğŒvZ‚·‚é
+        // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¹ã‚¯ãƒªãƒ¼ãƒ³åº§æ¨™ã‚’è¨ˆç®—ã™ã‚‹
         var screenPos = Camera.main.WorldToScreenPoint(transform.position);
 
-        // ƒvƒŒƒCƒ„[‚©‚çŒ©‚½ƒ}ƒEƒXƒJ[ƒ\ƒ‹‚Ì•ûŒü‚ğŒvZ‚·‚é
+        // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‹ã‚‰è¦‹ãŸãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã®æ–¹å‘ã‚’è¨ˆç®—ã™ã‚‹
         var direction = Input.mousePosition - screenPos;
 
-        // ƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ª‘¶İ‚·‚é•ûŒü‚ÌŠp“x‚ğæ“¾‚·‚é
+        // ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ãŒå­˜åœ¨ã™ã‚‹æ–¹å‘ã®è§’åº¦ã‚’å–å¾—ã™ã‚‹
         var angle = Utils.GetAngle(Vector3.zero, direction);
 
-        // ƒvƒŒƒCƒ„[‚ªƒ}ƒEƒXƒJ[ƒ\ƒ‹‚Ì•ûŒü‚ğŒ©‚é‚æ‚¤‚É‚·‚é
+        // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã®æ–¹å‘ã‚’è¦‹ã‚‹ã‚ˆã†ã«ã™ã‚‹
         //var angles = transform.localEulerAngles;
         //angles.z = angle - 90;
         //transform.localEulerAngles = angles;
@@ -137,7 +136,7 @@ public class Hero_Move: MonoBehaviour
 
         if (other.gameObject.tag == "Wall_flag_S")
         {
-            Debug.Log("‚İ‚¸");
+            Debug.Log("ã¿ãš");
             Wall_flag_S = false;
             S_Move.S_Wall_flag_S = false;
 

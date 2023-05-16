@@ -24,7 +24,10 @@ public class Select_3 : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("main");
+        if (Boss_HP2.clear_flag2 == true)
+        {
+            SceneManager.LoadScene("main3");
+        }
     }
     private void EndGame()
     {
