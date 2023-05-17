@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class operation_over : MonoBehaviour
 {
+    GameObject sphere;
     // Start is called before the first frame update
     void Start()
     {
-
+        sphere = GameObject.Find("next");
     }
 
     // Update is called once per frame
@@ -38,7 +39,14 @@ public class operation_over : MonoBehaviour
 
     private void OnMouseOver()
     {
+        sphere.GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1);
         if (Input.GetMouseButtonDown(0) == false) return;
         ChangeScene();
     }
+    private void OnMouseExit()
+    {
+        //SphereÇÃêFÇ™å≥ÇÃêFÇ…ñﬂÇËÇ‹Ç∑ÅB
+        sphere.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1);
+    }
+
 }

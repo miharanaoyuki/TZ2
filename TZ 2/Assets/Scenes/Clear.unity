@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 1334314501}
   - component: {fileID: 1334314504}
   m_Layer: 0
-  m_Name: 342
+  m_Name: next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -512,7 +512,6 @@ GameObject:
   - component: {fileID: 1513021441}
   - component: {fileID: 1513021440}
   - component: {fileID: 1513021439}
-  - component: {fileID: 1513021442}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -586,19 +585,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1513021442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513021438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39e7fe0266cdf3649acef7f2138536c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursor: {fileID: 2800000, guid: 331db831e24967640bdacb1992ec2caf, type: 3}
 --- !u!1 &1520516126
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,7 +964,7 @@ MonoBehaviour:
   delay: 0
   style: 1
   playOnAwake: 1
-  m_progress: 0.67666674
+  m_progress: 0.48074135
   usePosition: 1
   useRotation: 0
   useScale: 0

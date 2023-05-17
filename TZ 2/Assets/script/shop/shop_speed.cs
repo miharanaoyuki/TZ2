@@ -7,10 +7,11 @@ public class shop_speed : MonoBehaviour
 {
     public GameObject CoinObject = null;
     public static int TZ = 5;
+    GameObject sphere;
     // Start is called before the first frame update
     void Start()
     {
-
+        sphere = GameObject.Find("dash");
     }
 
     // Update is called once per frame
@@ -37,7 +38,15 @@ public class shop_speed : MonoBehaviour
 
     private void OnMouseOver()
     {
+        sphere.GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1);
+
         if (Input.GetMouseButtonDown(0) == false) return;
         Shaving();
+    }
+
+    private void OnMouseExit()
+    {
+        //SphereÇÃêFÇ™å≥ÇÃêFÇ…ñﬂÇËÇ‹Ç∑ÅB
+        sphere.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1);
     }
 }

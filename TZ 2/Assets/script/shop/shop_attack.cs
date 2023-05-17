@@ -7,10 +7,13 @@ public class shop_attack : MonoBehaviour
 {
     public GameObject CoinObject = null;
     public static int TZ = 7;
-    
+    GameObject sphere;
+    GameObject sphere2;
     // Start is called before the first frame update
     void Start()
     {
+        sphere = GameObject.Find("speed");
+        sphere2 = GameObject.Find("speed2");
     }
 
     // Update is called once per frame
@@ -37,7 +40,18 @@ public class shop_attack : MonoBehaviour
 
     private void OnMouseOver()
     {
+        sphere.GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1);
+        sphere2.GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1);
+
+
         if (Input.GetMouseButtonDown(0) == false) return;
         Shaving();
+    }
+
+    private void OnMouseExit()
+    {
+        //SphereÇÃêFÇ™å≥ÇÃêFÇ…ñﬂÇËÇ‹Ç∑ÅB
+        sphere.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1);
+        sphere2.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1);
     }
 }
