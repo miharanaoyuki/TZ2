@@ -7,9 +7,13 @@ using TMPro;
 public class shop_aircraft : MonoBehaviour
 {
     public GameObject CoinObject = null;
+    GameObject sphere;
+
     // Start is called before the first frame update
     void Start()
     {
+        sphere = GameObject.Find("smallattack");
+
     }
 
     // Update is called once per frame
@@ -75,7 +79,13 @@ public class shop_aircraft : MonoBehaviour
 
     private void OnMouseOver()
     {
+        sphere.GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1);
         if (Input.GetMouseButtonDown(0) == false) return;
         Shaving();
+    }
+    private void OnMouseExit()
+    {
+        //SphereÇÃêFÇ™å≥ÇÃêFÇ…ñﬂÇËÇ‹Ç∑ÅB
+        sphere.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1);
     }
 }
