@@ -11,7 +11,8 @@ public class shop_speed : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sphere = GameObject.Find("dash");
+        sphere = GameObject.Find("dash3");
+        sphere.GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1);
     }
 
     // Update is called once per frame
@@ -38,7 +39,7 @@ public class shop_speed : MonoBehaviour
 
     private void OnMouseOver()
     {
-        sphere.GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1);
+        sphere.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1);
 
         if (Input.GetMouseButtonDown(0) == false) return;
         Shaving();
@@ -47,6 +48,6 @@ public class shop_speed : MonoBehaviour
     private void OnMouseExit()
     {
         //SphereÇÃêFÇ™å≥ÇÃêFÇ…ñﬂÇËÇ‹Ç∑ÅB
-        sphere.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1);
+        sphere.GetComponent<Renderer>().material.color = new Color(0, 1, 1, 1);
     }
 }
