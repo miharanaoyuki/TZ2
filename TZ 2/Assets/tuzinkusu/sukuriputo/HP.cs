@@ -22,7 +22,7 @@ public class HP : MonoBehaviour
     {
         life = maxHp;
         //Debug.Log(life);
-
+        
         _slider = slider.GetComponent<Slider>();//slider‚ðŽæ“¾‚·‚é
     }
 
