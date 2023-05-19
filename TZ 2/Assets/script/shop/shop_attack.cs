@@ -32,7 +32,7 @@ public class shop_attack : MonoBehaviour
         if(BallShooter.attack_speed > 0.4f && TZ_coin.CoinNum >= TZ)
         {
             TZ_coin.CoinNum -= TZ;
-            BallShooter.attack_speed -= 0.03f;
+            BallShooter.attack_speed -= 0.05f;
             TZ += 9;
         }
         

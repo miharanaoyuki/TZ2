@@ -43,7 +43,7 @@ public class Boss_HP2 : MonoBehaviour
             if (boss_HP2 <= 0)
             {
                 clear_flag2 = true;
-                BallShooter.attack_flag = true;
+                //BallShooter.attack_flag = true;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
