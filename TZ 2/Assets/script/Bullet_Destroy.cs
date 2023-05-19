@@ -5,11 +5,13 @@ using UnityEngine;
 public class Bullet_Destroy : MonoBehaviour
 {
     public static float attack = 1.0f;
+    [SerializeField]
+    private SoundManager soundManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); //"SoundManager"Ç∆Ç¢Ç§ñºëOÇ≈åüçı
     }
 
     // Update is called once per frame
@@ -43,8 +45,7 @@ public class Bullet_Destroy : MonoBehaviour
 
         if (other.gameObject.tag == "Enemy_At")
         {
-
-          
+            soundManager.Play("conflict");
             Destroy(other.gameObject);
             Destroy(gameObject);
 
