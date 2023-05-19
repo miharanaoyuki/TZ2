@@ -116,4 +116,7 @@ MonoBehaviour:
   - name: key
     audioClip: {fileID: 8300000, guid: f27cd43a11879ad4db0dc055d8aafc29, type: 3}
     playedTime: 0
+  - name: conflict
+    audioClip: {fileID: 8300000, guid: d380d6b21e3ef0948988dd63a7d5d072, type: 3}
+    playedTime: 0
   playableDistance: 0.2
