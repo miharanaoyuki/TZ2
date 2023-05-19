@@ -113,4 +113,7 @@ MonoBehaviour:
   - name: "\u30B7\u30FC\u30F3\u79FB\u52D5"
     audioClip: {fileID: 8300000, guid: cf091b8b66a832a41a9200e270f2d499, type: 3}
     playedTime: 0
+  - name: key
+    audioClip: {fileID: 8300000, guid: f27cd43a11879ad4db0dc055d8aafc29, type: 3}
+    playedTime: 0
   playableDistance: 0.2

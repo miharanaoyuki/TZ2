@@ -50,18 +50,31 @@ public class Select_3 : MonoBehaviour
         sphere.GetComponent<Renderer>().material.color = new Color(0, 0, 1, 1);
         if (Input.GetMouseButtonDown(0) )
         {
-            if (Stop==true)
+            if (Stop == true)
             {
-                soundManager.Play("シーン移動");
+                if (Boss_HP.clear_flag1 == false)
+                {
+                    soundManager.Play("key");
+                }
+                if (Boss_HP.clear_flag1 == true)
+                {
+                    soundManager.Play("シーン移動");
+                }
+
                 Invoke("ChangeScene", 1);
                 Stop = false;
+                Invoke("STOP", 1);
+
             }
 
         }
         
         return;
     }
-
+    private void STOP()
+    {
+        Stop = true;
+    }
     private void OnMouseExit()
     {
         //Sphereの色が元の色に戻ります。

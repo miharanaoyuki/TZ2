@@ -54,9 +54,19 @@ public class Select_2 : MonoBehaviour
         {
             if (Stop==true)
             {
-                soundManager.Play("シーン移動");
+                if (Boss_HP.clear_flag1 == false)
+                {
+                    soundManager.Play("key");
+                }
+                if (Boss_HP.clear_flag1 == true)
+                {
+                    soundManager.Play("シーン移動");
+                }
+                   
                 Invoke("ChangeScene", 1);
                 Stop = false;
+                Invoke("STOP", 1);
+               
             }
 
         }
@@ -64,7 +74,12 @@ public class Select_2 : MonoBehaviour
         return;
     }
 
-    private void OnMouseExit()
+    private void STOP()
+    {
+        Stop = true;
+    }
+
+        private void OnMouseExit()
     {
         //Sphereの色が元の色に戻ります。
         sphere.GetComponent<Renderer>().material.color = new Color(1, 1, 1, 1);
