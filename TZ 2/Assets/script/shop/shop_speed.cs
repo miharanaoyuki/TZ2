@@ -32,6 +32,7 @@ public class shop_speed : MonoBehaviour
         {
             TZ_coin.CoinNum -= TZ;
             Hero_Move.speed += 0.002f;
+            S_Move.speed += 0.002f;
             TZ += 5;
         }
         
