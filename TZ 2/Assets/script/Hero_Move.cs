@@ -12,6 +12,8 @@ public class Hero_Move: MonoBehaviour
     public static bool Wall_flag_W = false;
     void Start()
     {
+        trap.trap_flag = false;
+
         Wall_flag_N = false;
         Wall_flag_E = false;
 
