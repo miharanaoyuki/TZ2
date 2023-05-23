@@ -44,6 +44,10 @@ public class shop_aircraft : MonoBehaviour
             TextMeshProUGUI CoinText = CoinObject.GetComponent<TextMeshProUGUI>();
             CoinText.text = "MAX";
         }
+        //if (Input.GetKey("t") && Input.GetKey("u") && Input.GetKey("z") && Input.GetKey("i"))
+        //{
+        //    TZ_coin.CoinNum = 100000;
+        //}
     }
 
     private void Shaving()
