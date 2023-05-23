@@ -12,7 +12,10 @@ public class S_Move : MonoBehaviour
 
     void Start()
     {
-
+        S_Wall_flag_N = false;
+        S_Wall_flag_E = false;
+        S_Wall_flag_S = false;
+        S_Wall_flag_W = false;
 
     }
 
