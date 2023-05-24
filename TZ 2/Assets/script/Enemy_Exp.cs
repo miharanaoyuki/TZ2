@@ -9,6 +9,7 @@ public class Enemy_Exp : MonoBehaviour
     public static float enemy_HP = 3f;
     public GameObject bossEffect;
     public GameObject particleObject;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,9 +30,12 @@ public class Enemy_Exp : MonoBehaviour
             soundManager.Play("Enemy");
             enemy_HP -= Bullet_Destroy.attack;
             Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
-            Destroy(other.gameObject);
+            if(shop_penetration.penetration == false)
+            {
+                Destroy(other.gameObject);
+            }
 
-            
+
 
             if (enemy_HP <= 0)
             {
@@ -52,7 +56,7 @@ public class Enemy_Exp : MonoBehaviour
         {
             soundManager.Play("Enemy");
             Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
-            enemy_HP -= 0.25f;
+            enemy_HP -= CircleAttack.sattack;
 
 
 

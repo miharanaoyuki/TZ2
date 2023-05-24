@@ -26,7 +26,9 @@ public class CircleAttack: MonoBehaviour
 
 	//追尾するポイントのプレイヤーからの距離(つまり小さい程、近付く)。
 	float followTargetDistance = 1.5f;
-	
+
+	public static float sattack = 0.25f;
+
 	float speed;
 	bool flag = true;
 	void Awake()

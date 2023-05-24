@@ -51,7 +51,7 @@ public class operation_shop : MonoBehaviour
         {
             if (Stop == true)
             {
-                soundManager.Play("ƒV[ƒ“ˆÚ“®");
+                soundManager.Play("shop2");
                 Invoke("ChangeScene", 1);
                 Stop = false;
             }

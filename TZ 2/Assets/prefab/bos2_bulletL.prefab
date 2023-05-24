@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6730326582681474860}
   - component: {fileID: -6138709225430984653}
   - component: {fileID: 6532379145437970011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bos2_bulletL
   m_TagString: Enemy_At
   m_Icon: {fileID: 0}

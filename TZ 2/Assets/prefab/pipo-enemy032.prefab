@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1584001678596217788}
   - component: {fileID: -8612984166018539317}
   - component: {fileID: -1013467794597605111}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pipo-enemy032
   m_TagString: Enemy
   m_Icon: {fileID: 0}
