@@ -6,7 +6,7 @@ using TMPro;
 public class TZ_coin : MonoBehaviour
 {
     public GameObject CoinObject = null;
-    public static int CoinNum = 200;
+    public static int CoinNum = 0;
     public static int Get_coin = 0;
 
     // Start is called before the first frame update
