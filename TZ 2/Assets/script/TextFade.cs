@@ -26,7 +26,7 @@ public class TextFade : MonoBehaviour
 
         for (var i = 0; i < cc; i++)
         {
-            for (var alpha = 0; alpha <= 255; alpha++)
+            for (var alpha = 0; alpha <= 255; alpha+=10)
             {
                 ChangeColor(i, (byte)alpha);
                 yield return new WaitForSeconds(_interval / 255f);

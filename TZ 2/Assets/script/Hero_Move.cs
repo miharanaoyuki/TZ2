@@ -12,6 +12,8 @@ public class Hero_Move: MonoBehaviour
     public static bool Wall_flag_W = false;
     void Start()
     {
+        Application.targetFrameRate = 60;
+
         trap.trap_flag = false;
 
         Wall_flag_N = false;
