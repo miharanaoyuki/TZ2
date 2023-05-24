@@ -11,8 +11,8 @@ public class Timer : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		CountDownTime = 5.0f; //カウントダウン開始秒数をセット
-		TextCountDown.enabled = false;
+		CountDownTime = 5.5f; //カウントダウン開始秒数をセット
+		TextCountDown.enabled = true;
 	}
 
 	// Update is called once per frame
@@ -22,15 +22,18 @@ public class Timer : MonoBehaviour
 		TextCountDown.text = String.Format("BOSS  {0:0}", CountDownTime);
 		//経過時刻を引いていく
 		CountDownTime -= Time.deltaTime;
-		if (CountDownTime <= 3.0f)
+		//if (CountDownTime <= 3.5f)
+  //      {
+		//	TextCountDown.enabled = true;
+		//}
+		if(CountDownTime <= 0.5f)
         {
-			TextCountDown.enabled = true;
+			TextCountDown.enabled = false;
 		}
 		//0.0秒以下になったらカウントダウンタイムを0.0で固定（止まったように見せる）
 		if (CountDownTime <= 0.0f)
 		{
 			CountDownTime = 0.0f;
-			TextCountDown.enabled = false;
 		}
 	}
 }
