@@ -29,7 +29,10 @@ public class Enemy_Exp5 : MonoBehaviour
             soundManager.Play("Enemy");
             enemy_HP -= Bullet_Destroy.attack;
             Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
-            Destroy(other.gameObject);
+            if (shop_penetration.penetration == false)
+            {
+                Destroy(other.gameObject);
+            }
 
 
 
@@ -52,7 +55,7 @@ public class Enemy_Exp5 : MonoBehaviour
         {
             soundManager.Play("Enemy");
             Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
-            enemy_HP -= 0.25f;
+            enemy_HP -= CircleAttack.sattack;
 
 
 

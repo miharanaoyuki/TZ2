@@ -37,7 +37,10 @@ public class Boss_HP2 : MonoBehaviour
             soundManager.Play("Enemy");
             boss_HP2 -= Bullet_Destroy.attack;
             Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
-            Destroy(other.gameObject);
+            if (shop_penetration.penetration == false)
+            {
+                Destroy(other.gameObject);
+            }
             Debug.Log(boss_HP2);
 
             if (boss_HP2 <= 0)
@@ -62,7 +65,7 @@ public class Boss_HP2 : MonoBehaviour
         {
             soundManager.Play("Enemy");
 
-            boss_HP2 -= 0.5f;
+            boss_HP2 -= CircleAttack.sattack;
 
             if (boss_HP2 <= 0)
             {

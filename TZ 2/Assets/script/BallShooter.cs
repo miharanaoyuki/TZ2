@@ -4,7 +4,7 @@ public class BallShooter : MonoBehaviour
 {
 
     public GameObject ball;
-    float speed;
+    public static float speed;
     [SerializeField]
     private SoundManager soundManager;
 

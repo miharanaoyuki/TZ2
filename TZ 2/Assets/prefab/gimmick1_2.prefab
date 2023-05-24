@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8779251128162456443}
   - component: {fileID: -6073012122259992944}
   - component: {fileID: 8038686466643600608}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gimmick1_2
   m_TagString: gimmick
   m_Icon: {fileID: 0}

@@ -47,7 +47,10 @@ public class Bullet_Destroy : MonoBehaviour
         {
             soundManager.Play("conflict");
             Destroy(other.gameObject);
-            Destroy(gameObject);
+            if (shop_penetration.penetration == false)
+            {
+                Destroy(gameObject);
+            }
 
 
         }
