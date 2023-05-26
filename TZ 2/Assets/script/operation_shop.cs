@@ -27,7 +27,7 @@ public class operation_shop : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("Select");
+        SceneManager.LoadScene("shop2");
     }
     private void EndGame()
     {

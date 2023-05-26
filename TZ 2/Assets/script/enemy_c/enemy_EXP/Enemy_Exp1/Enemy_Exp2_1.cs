@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Exp2 : MonoBehaviour
+public class Enemy_Exp2_1 : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
     public static float enemy_HP = 1f;
     public GameObject particleObject;
     public GameObject bossEffect;
+
+    public static bool enemy_flag = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +39,7 @@ public class Enemy_Exp2 : MonoBehaviour
 
             if (enemy_HP <= 0)
             {
+                enemy_flag = false;
                 GameObject.Find("Coin").GetComponent<TZ_coin>().TZ1();
                 Destroy(gameObject);
                 enemy_HP = 1f;
@@ -58,6 +62,7 @@ public class Enemy_Exp2 : MonoBehaviour
 
             if (enemy_HP <= 0)
             {
+                enemy_flag = false;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)

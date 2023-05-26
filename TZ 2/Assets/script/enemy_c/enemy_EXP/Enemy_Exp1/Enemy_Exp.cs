@@ -2,25 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_exp7 : MonoBehaviour
+public class Enemy_Exp : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
-    public static float enemy_HP = 8f;
+    public static float enemy_HP = 3f;
     public GameObject bossEffect;
     public GameObject particleObject;
+
+    public static bool enemy_flag = false;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-
+      
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); //"SoundManager"という名前で検索
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,7 +32,7 @@ public class Enemy_exp7 : MonoBehaviour
             soundManager.Play("Enemy");
             enemy_HP -= Bullet_Destroy.attack;
             Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
-            if (shop_penetration.penetration == false)
+            if(shop_penetration.penetration == false)
             {
                 Destroy(other.gameObject);
             }
@@ -38,17 +41,17 @@ public class Enemy_exp7 : MonoBehaviour
 
             if (enemy_HP <= 0)
             {
-
+                enemy_flag = false;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
-                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ2();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ1();
                 Destroy(gameObject);
-                enemy_HP = 5f;
-            }
-
-
+                enemy_HP = 3f;
+            }    
+                
+            
         }
 
         if (other.gameObject.tag == "sbullet")
@@ -61,13 +64,14 @@ public class Enemy_exp7 : MonoBehaviour
 
             if (enemy_HP <= 0)
             {
+                enemy_flag = false;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
-                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ2();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ1();
                 Destroy(gameObject);
-                enemy_HP = 5f;
+                enemy_HP = 3f;
             }
 
 

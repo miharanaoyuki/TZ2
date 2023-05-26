@@ -15,7 +15,7 @@ public class bullet_down : MonoBehaviour
     {
         transform.Translate(0, -0.2f, 0);
 
-        if (transform.position.y < -20)
+        if (transform.position.y < -10)
         {
             Destroy(gameObject);
         }

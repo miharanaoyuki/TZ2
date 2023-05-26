@@ -2,24 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Exp6 : MonoBehaviour
+public class Enemy_Exp3_2 : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
-    public static float enemy_HP = 6f;
+    public static float enemy_HP = 1f;
     public GameObject particleObject;
     public GameObject bossEffect;
+
+    public static bool enemy_flag = false;
+
     // Start is called before the first frame update
     void Start()
     {
-
         soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>(); //"SoundManager"という名前で検索
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -36,11 +38,11 @@ public class Enemy_Exp6 : MonoBehaviour
 
             if (enemy_HP <= 0)
             {
-                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ2();
+                enemy_flag = false;
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ1();
                 Destroy(gameObject);
-                enemy_HP = 3;
+                enemy_HP = 1f;
             }
-
 
 
 
@@ -50,21 +52,23 @@ public class Enemy_Exp6 : MonoBehaviour
         if (other.gameObject.tag == "sbullet")
         {
             soundManager.Play("Enemy");
-            Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
+           Instantiate(particleObject, this.transform.position, Quaternion.identity); //パーティクル用ゲームオブジェクト生成
             enemy_HP -= CircleAttack.sattack;
 
+          
 
 
 
             if (enemy_HP <= 0)
             {
+                enemy_flag = false;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
                 effect.transform.position = gameObject.transform.position;
-                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ2();
+                GameObject.Find("Coin").GetComponent<TZ_coin>().TZ1();
                 Destroy(gameObject);
-                enemy_HP = 3f;
+                enemy_HP = 1f;
             }
 
 
