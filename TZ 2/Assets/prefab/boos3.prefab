@@ -174,14 +174,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fa89e8d74cdcb4593d143cfebde9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab1: {fileID: 8006298572035451320, guid: 3f5d49240187e1a4aa53bedf51f81a7a, type: 3}
-  bulletPrefab2: {fileID: 8006298572035451320, guid: 6fb280213ae5b7f42a3bde79369174c4, type: 3}
-  bulletPrefab3: {fileID: 8006298572035451320, guid: 2c115f77ee5a4f944ac615455ae3d8c6, type: 3}
-  bulletPrefab4: {fileID: 8006298572035451320, guid: cf077c129633c4e439eb9bb680796991, type: 3}
-  bulletPrefab5: {fileID: 8006298572035451320, guid: 904cc76e6b4ba9646b24c24e2d107d83, type: 3}
-  bulletPrefab6: {fileID: 8006298572035451320, guid: d22dec40ffc69f54b90bcd5b95686b4d, type: 3}
-  bulletPrefab7: {fileID: 8006298572035451320, guid: bdc13ecef8060e9409774cc64803c426, type: 3}
-  bulletPrefab8: {fileID: 8006298572035451320, guid: 82105ba2f807f9e40ad25c3a9d69f7b5, type: 3}
+  bulletPrefab1: {fileID: 8006298572035451320, guid: 29838c1523cced64f8bbf8c60840b125, type: 3}
+  bulletPrefab2: {fileID: 8006298572035451320, guid: 64c75bebf7753504b96ff1e0f2ad5497, type: 3}
+  bulletPrefab3: {fileID: 8006298572035451320, guid: db68dea8015178347ba9be3b2bfabf73, type: 3}
+  bulletPrefab4: {fileID: 8006298572035451320, guid: 9929ec4f93471044db8ce6d6b1fdaa75, type: 3}
+  bulletPrefab5: {fileID: 8006298572035451320, guid: 1d75bbf2cd20f8e4b991b39bd42e6041, type: 3}
+  bulletPrefab6: {fileID: 8006298572035451320, guid: e5ce637daa87abc4597599b354b32cbe, type: 3}
+  bulletPrefab7: {fileID: 8006298572035451320, guid: ab5f4d1e481c07a4e84e9fc9b988f478, type: 3}
+  bulletPrefab8: {fileID: 8006298572035451320, guid: 2752e6ea4e319c04fa39f2dce8e91ea9, type: 3}
   bulletPrefab9: {fileID: 8006298572035451320, guid: 0a2982b8ae98b494ca37f1706c3832ca, type: 3}
   timeLimit: 2
 --- !u!114 &8643174899872992835

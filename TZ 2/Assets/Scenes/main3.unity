@@ -2770,7 +2770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boss: {fileID: 8050871101756752288, guid: a4283e4c9335c6248a299e1ae9c63082, type: 3}
   boss_HP: {fileID: 8973725418880212409}
-  boss_interval: 5
+  boss_interval: 2
 --- !u!212 &1631122103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3363,6 +3363,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 2800000, guid: 84f73fd58afcbb342a4e53ff2c8abb1d, type: 3}
+--- !u!114 &1959670943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959670929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3838b7d61b2fc548b1b9a056dc5b286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab1: {fileID: 5455524413190491835, guid: d48060b598e19c54489941155b2fd183, type: 3}
+  bulletPrefab2: {fileID: 5455524413190491835, guid: 929927755a71b504cb6c533b81f18838, type: 3}
+  bulletPrefab3: {fileID: 5455524413190491835, guid: a50e2d8832643974db5a46128419acf0, type: 3}
+  bulletPrefab4: {fileID: 5455524413190491835, guid: 9b4347045675e604f8e58991493a0445, type: 3}
+--- !u!114 &1959670944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959670929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897d3c027d26e1143852b38030de87d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 0}
 --- !u!1 &2045891540
 GameObject:
   m_ObjectHideFlags: 0
