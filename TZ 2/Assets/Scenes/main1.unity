@@ -1481,7 +1481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boss: {fileID: 1965602191144147550, guid: c218f98a2dca07343acf1bc5d5979532, type: 3}
   boss_HP: {fileID: 329146103}
-  boss_interval: 5
+  boss_interval: 240
 --- !u!212 &1631122103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2331,6 +2331,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 1031309476}
+    - target: {fileID: 97556578927382967, guid: baef3049de0b69c4492e4134d71c3d81, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 97556578927382967, guid: baef3049de0b69c4492e4134d71c3d81, type: 3}
       propertyPath: soundManager
       value: 

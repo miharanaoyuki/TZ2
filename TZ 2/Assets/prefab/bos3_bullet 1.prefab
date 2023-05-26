@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1294284697782234300}
   - component: {fileID: 6730326582681474860}
   - component: {fileID: 5103769252697517192}
-  - component: {fileID: 5574408726337637486}
+  - component: {fileID: 2144410837214715067}
   m_Layer: 9
-  m_Name: bos3_bullet 16
+  m_Name: bos3_bullet 1
   m_TagString: Enemy_At
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.06629268}
   serializedVersion: 2
   m_Radius: 1.8489896
---- !u!114 &5574408726337637486
+--- !u!114 &2144410837214715067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,6 +133,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8006298572035451320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c31f31bba8c45fe4ab9db852debda08e, type: 3}
+  m_Script: {fileID: 11500000, guid: fc96159dad98f9845b953a87a5e9cead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

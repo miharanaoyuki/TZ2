@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		CountDownTime = 5.5f; //カウントダウン開始秒数をセット
+		CountDownTime = 240.5f; //カウントダウン開始秒数をセット
 		TextCountDown.enabled = true;
 	}
 
