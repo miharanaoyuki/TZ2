@@ -12,8 +12,23 @@ public class Hero_Move: MonoBehaviour
     public static bool Wall_flag_W = false;
     void Start()
     {
+        //敵出現の初期化
+        Enemy_Exp.enemy_flag = false;
+        Enemy_Exp1.enemy_flag = false;
+        Enemy_Exp2.enemy_flag = false;
+        Enemy_Exp3.enemy_flag = false;
+        Enemy_Exp_1.enemy_flag = false;
+        Enemy_Exp1_1.enemy_flag = false;
+        Enemy_Exp2_1.enemy_flag = false;
+        Enemy_Exp3_1.enemy_flag = false;
+        Enemy_Exp_2.enemy_flag = false;
+        Enemy_Exp1_2.enemy_flag = false;
+        Enemy_Exp2_2.enemy_flag = false;
+        Enemy_Exp3_2.enemy_flag = false;
+
         Application.targetFrameRate = 60;
 
+        //トラップ初期化
         trap.trap_flag = false;
 
         Wall_flag_N = false;

@@ -18,22 +18,22 @@ public class Bullet_Destroy : MonoBehaviour
     void Update()
     {
 
-        if (transform.position.y <= -20f)
+        if (transform.position.y <= -10f)
         {
             Destroy(gameObject);
         }
 
-        if (transform.position.y >= 20f)
+        if (transform.position.y >= 10f)
         {
             Destroy(gameObject);
         }
 
-        if (transform.position.x <= -20f)
+        if (transform.position.x <= -19f)
         {
             Destroy(gameObject);
         }
 
-        if (transform.position.x >= 20f)
+        if (transform.position.x >= 19f)
         {
             Destroy(gameObject);
         }
