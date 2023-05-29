@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1711817411275036801}
   - component: {fileID: -7111346182558898828}
   - component: {fileID: 8779251128162456443}
-  - component: {fileID: 44313072380135898}
   - component: {fileID: 6168235360850742469}
   - component: {fileID: 1956960971440684904}
+  - component: {fileID: -7936808283902706849}
   m_Layer: 9
   m_Name: enemy8 2
   m_TagString: Enemy
@@ -126,21 +126,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &44313072380135898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3063308649704514495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c230e4bab68ef2e429378d5dcce49113, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundManager: {fileID: 5687635236622359513, guid: c964315bafa64344aa53117b040415f1, type: 3}
-  bossEffect: {fileID: 8701414765290051853, guid: 0c4e88fab39883e43bb79081ab3de3a4, type: 3}
-  particleObject: {fileID: 5398870558487938495, guid: 6fd963244209ced4ea61003df7a67835, type: 3}
 --- !u!58 &6168235360850742469
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -172,3 +157,18 @@ MonoBehaviour:
   ball: {fileID: 8006298572035451320, guid: 0accad71ba392db4c82234161d28b9bf, type: 3}
   soundManager: {fileID: 0}
   intervalSec: 3
+--- !u!114 &-7936808283902706849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063308649704514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c4d09c8ec7f04479039516433b89a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundManager: {fileID: 5687635236622359513, guid: c964315bafa64344aa53117b040415f1, type: 3}
+  bossEffect: {fileID: 8701414765290051853, guid: 0c4e88fab39883e43bb79081ab3de3a4, type: 3}
+  particleObject: {fileID: 5398870558487938495, guid: 6fd963244209ced4ea61003df7a67835, type: 3}

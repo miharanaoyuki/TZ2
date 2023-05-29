@@ -34,7 +34,7 @@ public class enemy_c3 : MonoBehaviour
         time += Time.deltaTime;
 
         //経過時間が生成時間になったとき(生成時間より大きくなったとき)
-        if (time > interval && Enemy_Exp3.enemy_flag == false)
+        if (time > interval && (Enemy_Exp3.enemy_flag == false || Enemy_Exp8.enemy_flag == false || Enemy_Exp9.enemy_flag == false))
         {
             //enemyをインスタンス化する(生成する)
             GameObject enemy = Instantiate(enemyPrefab);
@@ -43,6 +43,8 @@ public class enemy_c3 : MonoBehaviour
             //経過時間を初期化して再度時間計測を始める
             time = 0f;
             Enemy_Exp3.enemy_flag = true;
+            Enemy_Exp8.enemy_flag = true;
+            Enemy_Exp9.enemy_flag = true;
         }
     }
 

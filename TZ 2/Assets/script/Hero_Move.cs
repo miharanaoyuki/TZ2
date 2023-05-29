@@ -25,6 +25,33 @@ public class Hero_Move: MonoBehaviour
         Enemy_Exp1_2.enemy_flag = false;
         Enemy_Exp2_2.enemy_flag = false;
         Enemy_Exp3_2.enemy_flag = false;
+        //敵出現2の初期化
+        Enemy_Exp5.enemy_flag = false;
+        Enemy_Exp6.enemy_flag = false;
+        Enemy_Exp7.enemy_flag = false;
+        Enemy_Exp8.enemy_flag = false;
+        Enemy_Exp5_1.enemy_flag = false;
+        Enemy_Exp6_1.enemy_flag = false;
+        Enemy_Exp7_1.enemy_flag = false;
+        Enemy_Exp8_1.enemy_flag = false;
+        Enemy_Exp5_2.enemy_flag = false;
+        Enemy_Exp6_2.enemy_flag = false;
+        Enemy_Exp7_2.enemy_flag = false;
+        Enemy_Exp8_2.enemy_flag = false;
+        //敵出現3の初期化
+        Enemy_Exp9.enemy_flag = false;
+        Enemy_Exp10.enemy_flag = false;
+        Enemy_Exp11.enemy_flag = false;
+        Enemy_Exp12.enemy_flag = false;
+        Enemy_Exp9_1.enemy_flag = false;
+        Enemy_Exp10_1.enemy_flag = false;
+        Enemy_Exp11_1.enemy_flag = false;
+        Enemy_Exp12_1.enemy_flag = false;
+        Enemy_Exp9_2.enemy_flag = false;
+        Enemy_Exp10_2.enemy_flag = false;
+        Enemy_Exp11_2.enemy_flag = false;
+        Enemy_Exp12_2.enemy_flag = false;
+
 
         Application.targetFrameRate = 60;
 

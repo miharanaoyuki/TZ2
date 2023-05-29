@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Exp9 : MonoBehaviour
+public class Enemy_Exp9_1 : MonoBehaviour
 {
     [SerializeField]
     private SoundManager soundManager;
     public static float enemy_HP = 13f;
     public GameObject particleObject;
     public GameObject bossEffect;
+
+    public static bool enemy_flag = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,7 @@ public class Enemy_Exp9 : MonoBehaviour
 
             if (enemy_HP <= 0)
             {
+                enemy_flag = false;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
@@ -65,6 +69,7 @@ public class Enemy_Exp9 : MonoBehaviour
 
             if (enemy_HP <= 0)
             {
+                enemy_flag = false;
                 //エフェクトを生成する
                 GameObject effect = Instantiate(bossEffect) as GameObject;
                 //エフェクトが発生する場所を決定する(敵オブジェクトの場所)
