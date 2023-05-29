@@ -34,7 +34,7 @@ public class enemy_c1 : MonoBehaviour
         time += Time.deltaTime;
 
         //経過時間が生成時間になったとき(生成時間より大きくなったとき)
-        if (time > interval && Enemy_Exp1.enemy_flag == false)
+        if (time > interval && (Enemy_Exp1.enemy_flag == false || Enemy_Exp6.enemy_flag == false || Enemy_Exp10.enemy_flag == false))
         {
             //enemyをインスタンス化する(生成する)
             GameObject enemy = Instantiate(enemyPrefab);
@@ -44,6 +44,8 @@ public class enemy_c1 : MonoBehaviour
             time = 0f;
 
             Enemy_Exp1.enemy_flag = true;
+            Enemy_Exp6.enemy_flag = true;
+            Enemy_Exp10.enemy_flag = true;
         }
     }
 
