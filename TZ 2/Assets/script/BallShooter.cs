@@ -12,9 +12,17 @@ public class BallShooter : MonoBehaviour
 
     public static float attack_speed = 1.0f;
 
+    //ˆê‰ñ‚¾‚¯”­“®
+    bool one = false;
+
     void Start()
     {
-        speed = 10.0f;  // ’e‚Ì‘¬“x
+        if (one == false)
+        {
+            speed = 10.0f;  // ’e‚Ì‘¬“x
+            one = true;
+        }
+        
         //attack_flag = true;
         InvokeRepeating("attack", attack_speed, attack_speed);
     }
