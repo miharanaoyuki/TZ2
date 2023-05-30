@@ -2782,7 +2782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boss: {fileID: 8050871101756752288, guid: a4283e4c9335c6248a299e1ae9c63082, type: 3}
   boss_HP: {fileID: 8973725418880212409}
-  boss_interval: 2
+  boss_interval: 240
 --- !u!212 &1631122103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4075,6 +4075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: boss_hp3
       objectReference: {fileID: 0}
+    - target: {fileID: 5398519971557708848, guid: 47998e8347711014fa1efa12ce57dd3d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5398519971557708849, guid: 47998e8347711014fa1efa12ce57dd3d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.49999994
@@ -4141,11 +4145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5398519971557708849, guid: 47998e8347711014fa1efa12ce57dd3d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -241.97
+      value: -249.2
       objectReference: {fileID: 0}
     - target: {fileID: 5398519971557708849, guid: 47998e8347711014fa1efa12ce57dd3d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 139.6
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 5398519971557708849, guid: 47998e8347711014fa1efa12ce57dd3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4157,6 +4161,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5398519971557708849, guid: 47998e8347711014fa1efa12ce57dd3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398519972126072384, guid: 47998e8347711014fa1efa12ce57dd3d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398519972126072384, guid: 47998e8347711014fa1efa12ce57dd3d, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
