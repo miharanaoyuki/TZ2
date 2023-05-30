@@ -2623,9 +2623,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1652586296}
     m_Modifications:
+    - target: {fileID: 229118326075843860, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 229118326075843860, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 229118326652661604, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
       propertyPath: m_Name
       value: boss_hp2
+      objectReference: {fileID: 0}
+    - target: {fileID: 229118326652661604, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 229118326652661605, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
       propertyPath: m_Pivot.x
@@ -2693,11 +2705,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 229118326652661605, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -241.97
+      value: -246.7
       objectReference: {fileID: 0}
     - target: {fileID: 229118326652661605, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 146.49997
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 229118326652661605, guid: 076ebd2a4ae13674ca74be4588a34e8a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
