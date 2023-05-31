@@ -21,43 +21,46 @@ public class S_Move : MonoBehaviour
 
     void Update()
     {
-        Vector2 position = transform.position;
-        if (S_Wall_flag_W == false)
+        if (trap.trap_flag == false)
         {
-            if (Input.GetKey("left")||Input.GetKey("a"))
+            Vector2 position = transform.position;
+            if (S_Wall_flag_W == false)
             {
-                position.x -= speed;
+                if (Input.GetKey("left") || Input.GetKey("a"))
+                {
+                    position.x -= speed;
+                }
             }
-        }
 
 
-        if (S_Wall_flag_E == false)
-        {
-            if (Input.GetKey("right") || Input.GetKey("d"))
+            if (S_Wall_flag_E == false)
             {
-                position.x += speed;
+                if (Input.GetKey("right") || Input.GetKey("d"))
+                {
+                    position.x += speed;
+                }
             }
-        }
 
 
-        if (S_Wall_flag_N == false)
-        {
-            if (Input.GetKey("up") || Input.GetKey("w"))
+            if (S_Wall_flag_N == false)
             {
-                position.y += speed;
+                if (Input.GetKey("up") || Input.GetKey("w"))
+                {
+                    position.y += speed;
+                }
             }
-        }
 
 
-        if (S_Wall_flag_S == false)
-        {
-            if (Input.GetKey("down") || Input.GetKey("s"))
+            if (S_Wall_flag_S == false)
             {
-                position.y -= speed;
+                if (Input.GetKey("down") || Input.GetKey("s"))
+                {
+                    position.y -= speed;
+                }
             }
-        }
 
-        transform.position = position;
+            transform.position = position;
+        }
     }
 }
     
